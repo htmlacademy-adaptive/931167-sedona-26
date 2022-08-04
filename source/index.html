@@ -1,12 +1,152 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона - главная страница</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<!-- Index header -->
+  <header class="page-header">
+    <button class="page-header__toggle toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <a class="page-header__logo" href="">
+      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип города Седона">
+    </a>
+    <nav class="page-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--current">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__itemt">
+          <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+<!-- Index main -->
+  <main class="page-container">
+    <section class="page-container__hero hero">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <img class="hero__image" src="" alt="">
+    </section>
+
+<!-- advantages -->
+    <section class="page-container__advantages advantages">
+      <h2 class="visually-hidden">Приемущества отдыха в Седоне</h2>
+      <div class="advantages__preview">
+        <p class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+
+<!-- first reason -->
+      <div class="advantages__card advantages-card">
+        <h3 class="advantages-card__title">Настоящий городок</h3>
+        <p class="advantages-card__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        <img class="advantages-card__image" src="" width="" height="" alt="Фотография городка">
+      </div>
+
+<!-- recommend -->
+      <div class="advantages__recommend recommend">
+        <ul class="recommend__list">
+          <li class="recommend__item">
+            <h3 class="recommend__title">Жильё</h3>
+            <p class="recommend__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="recommend__item">
+            <h3 class="recommend__title">Еда</h3>
+            <p class="recommend__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          </li>
+          <li class="recommend__item">\
+            <h3 class="recommend__title">Сувениры</h3>
+            <p class="recommend__description">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </div>
+
+<!-- second reason -->
+      <div class="advantages__card advantages-card">
+        <h3 class="advantages-card__title">Там есть мост дьявола</h3>
+        <p class="advantages-card__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <img class="advantages-card__image" src="" width="" height="" alt="Фотография каньона">
+      </div>
+
+<!-- other reason -->
+      <ul class="advantages__card-list">
+        <li class="advantages__card advantages-card">
+          <h3 class="advantages-card__title">Небольшая площадь</h3>
+          <p class="advantages-card__description">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="advantages__card advantages-card">
+          <h3 class="advantages-card__title">Красивая дорога</h3>
+          <p class="advantages-card__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="advantages__card advantages-card">
+          <h3 class="advantages-card__title">Мало туристов</h3>
+          <p class="advantages-card__description">Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
+
+<!-- offer -->
+    <section class="page-container__offer more">
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <p class="more__title">Заинтерисовались?</p>
+      <p class="more__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button class="more__button button" type="button">
+        <span class="button__text">Найти гостиницу</span>
+      </button>
+    </section>
+
+<!-- location -->
+    <div class="location">
+      <h2 class="visually-hidden">Карта с геолокацией</h2>
+      <img class="location__image " src="" alt="Карта">
+    </div>
+  </main>
+
+<!-- Index footer -->
+  <footer class="page-footer">
+    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+    <div class="page-footer__hashtag hashtag">
+      <p class="visually-hidden">Наш хэштег</p>
+      <span class="hashtag__text">#visitsedona</span>
+    </div>
+    <div class="page-footer__social social">
+      <p class="visually-hidden">Наши социальные сети</p>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <span class="copyright__title">Разработано</span>
+      <a class="copyright__link" href="#">
+        <span class="visually-hidden">HTML ACADEMY</span>
+        <svg class="copyright__"></svg>
+      </a>
+    </div>
+  </footer>
   </body>
 </html>
