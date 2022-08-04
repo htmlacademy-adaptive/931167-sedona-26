@@ -7,85 +7,93 @@
   <body class="page__body">
 
 <!-- Catalog header -->
-    <header class="page-header">
-      <h1 class="visually-hidden">Шапка страницы</h1>
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-image" src="" width="" height="" alt="Логотип города Седона">
-      </a>
-      <nav class="page-header__navigation navigation">
-        <button class="navigation__toggle button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="navigation__itemt">
-            <a class="navigation__link" href="#">Htmlacademy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <header class="page-header">
+    <button class="page-header__toggle toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <a class="page-header__logo" href="">
+      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип города Седона">
+    </a>
+    <nav class="page-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item--current">
+          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__itemt">
+          <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
 <!-- Catalog cards-->
-    <main class="catalog-container">
-      <h1 class="visually-hidden">Каталог с фотографиями и видео</h1>
-      <section class="catalog-container__hero hero">
-        <img class="hero__logo" src="" alt="Седона">
-        <h2 class="hero__title">Фото и видео</h2>
-        <p class="hero__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </section>
-      <section class="catalog-container__gallery gallery">
-        <h2 class="visually-hidden">Галерея фото и видео</h2>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <img class="gallery__image" src="" alt="Неродный просторы">
-            <b class="gallery__title">Неродные просторы</b>
-            <span class="gallery__author">Автор фото: Борис</span>
+  <main class="catalog-container">
+    <h1 class="visually-hidden">Каталог с фотографиями и видео</h1>
+    <section class="catalog-container__hero hero">
+      <img class="hero__logo" src="" alt="Седона">
+      <h2 class="hero__title">Фото и видео</h2>
+      <p class="hero__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    </section>
+    <section class="catalog-container__gallery gallery">
+      <h2 class="visually-hidden">Галерея фото и видео</h2>
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <img class="gallery__image" src="" alt="Неродный просторы">
+          <div class="gallery__description">
+            <p class="gallery__title">Неродные просторы</з>
+            <p class="gallery__author">Автор фото: Борис</p>
+          </div>
+          <div class="gallery__social">
+            <button class="gallery__like" type="button"></button>
             <span class="gallery__likes">1350</span>
-          </li>
-        </ul>
-      </section>
+          </div>
+        </li>
 
-      <section class="catalog--container__proof proof">
-        <b class="proof__title">Все еще сомневаетесь?</b>
-        <p class="proof__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="proof__video" src="" alt="Видео-презентация">
-      </section>
-    </main>
+        <!-- Добавть элементы -->
+      </ul>
+    </section>
 
-<!-- Catalog footer -->
-    <footer class="page-footer">
-      <div class="page-footer__hashtag hashtag">
-        <h2 class="visually-hidden">Хэштег</h2>
-        <span class="hashtag__text">#visitsedona</span>
-      </div>
-      <div class="page-footer__social social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="#"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <h2 class="copyright__title">Разработано</h2>
-        <a class="copyright__link" href="#">
-          <span class="visually-hidden">HTML ACADEMY</span>
-        </a>
-      </div>
+<!-- pr -->
+    <section class="catalog-container__proof more">
+      <h3 class="more__title">Все еще сомневаетесь?</h3>
+      <p class="more__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <img class="more__video" src="" alt="Видео-презентация">
+    </section>
+  </main>
+
+  <!-- Catalog footer -->
+  <footer class="page-footer">
+    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+    <div class="page-footer__hashtag hashtag">
+      <p class="visually-hidden">Наш хэштег</p>
+      <span class="hashtag__text">#visitsedona</span>
+    </div>
+    <div class="page-footer__social social">
+      <p class="visually-hidden">Наши социальные сети</p>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>

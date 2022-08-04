@@ -6,48 +6,44 @@
   </head>
   <body class="page__body">
 
-    <header class="page-header">
-      <h1 class="visually-hidden">Шапка страницы</h1>
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-image" src="" width="" height="" alt="Логотип города Седона">
-      </a>
-      <nav class="page-header__navigation navigation">
-        <button class="navigation__toggle button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="navigation__itemt">
-            <a class="navigation__link" href="#">Htmlacademy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<!-- Form header -->
+  <header class="page-header">
+    <button class="page-header__toggle toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <a class="page-header__logo" href="">
+      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип города Седона">
+    </a>
+    <nav class="page-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item--current">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__itemt">
+          <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- 56:21 посмотреть названия классов
-01:10 час-->
-<!-- осатвьте отзыы - H1
-остальные заголовками h2
-можно оставить ледженды и филдсеты -->
 
-    <main class="form-container">
-      <h1 class="visually-hidden">Форма для отправки отзыва</h1>
-      <section class="form-container__hero hero">
-        <img class="hero__logo" src="" alt="Седона">
-        <h2 class="hero__title">Оставьте свой отзыв</h2>
-        <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </section>
+
+  <main class="form-container">
+    <h1 class="visually-hidden">Форма для отправки отзыва</h1>
+    <section class="form-container__hero hero">
+      <img class="hero__logo" src="" alt="Седона">
+      <h2 class="hero__title">Оставьте свой отзыв</h2>
+      <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
 
 <!-- person data -->
-      <form class="form-container__feedback feedback" method="post" action="#">
+    <form class="form-container__feedback feedback" method="post" action="#">
       <h2 class="visually-hidden">Заполните форму</h2>
       <fieldset class="feedback__group">
         <label class="feedback__title">Предствьтесь:</label>
@@ -62,15 +58,15 @@
 <!-- contacts -->
       <fieldset class="feedback__group">
         <label class="feedback__title">Контактная информация:</label>
-        <div class="feedback__wrapper contacts">
-          <label class="contacts__phone phone">Контактный телефон*:</label>
+        <div class="feedback__wrapper phone">
+          <label class="phone__title">Контактный телефон*:</label>
           <input class="phone__input" type="tel" name="phone" id="" placeholder="Введите телефон" required>
           <img class="phone__image" src="" alt="Введите телефон">
         </div>
-        <div class="feedback__wrapper contacts">
-          <label class="contacts__email email">"Электронная почта*:</label>
+        <div class="feedback__wrapper email">
+          <label class="email__title">"Электронная почта*:</label>
           <input class="email__input" type="tel" name="phone" id="" placeholder="Введите email" required>
-          <img class="phone__email" src="" alt="Введите email">
+          <img class="email__email" src="" alt="Введите email">
         </div>
       </fieldset>
 
@@ -78,9 +74,9 @@
       <fieldset class="feedback__group">
         <label class="feedback__title">Ваше общее впечатление:</label>
         <ul class="control-container feedback__list feedback__radio">
-          <li class="feedback__item radio">
+          <li class="feedback__item">
             <label class="control radio">
-              <input class="visually-hidden control__input" type="radio" value="Скорее положительное" checked>
+              <input class="visually-hidden control__input" type="radio" name="impression" value="Скорее положительное" checked>
               <span class="control__icon"></span>
               <span class="control__name">Скорее положительное</span>
             </label>
@@ -115,30 +111,65 @@
 
       <button class="feedback__button button" type="submit">Отправить отзыв</button>
         <span class="necessarily">*-Обязательные поля</span>
+    </form>
+  </main>
 
-      </form>
-  </section>
-</main>
+  <!-- form footer -->
+  <footer class="page-footer">
+    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+    <div class="page-footer__hashtag hashtag">
+      <p class="visually-hidden">Наш хэштег</p>
+      <span class="hashtag__text">#visitsedona</span>
+    </div>
+    <div class="page-footer__social social">
+      <p class="visually-hidden">Наши социальные сети</p>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <svg class="social__icon" aria-hidden="true"></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 <!-- Modal windows -->
-      <div class="modal">
-        <span class="modal__title">Что-то пошло не так!</span>
-        <p class="modal__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button button">
-          <span class="button__text button__text--modal-modile">Ок</span>
-        </button>
-      </div>
+  <div class="popup">
+    <div class="popup__container">
+      <p class="modal__title">Что-то пошло не так!</p>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button button" type="button">
+        <span class="button__text button__text--modal-modile">Ок</span>
+      </button>
 
-      <div class="modal">
-        <span class="modal__title">Ваш отзыв отправлен!</span>
-        <p class="modal__discription">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.ь</p>
-        <button class="modal__button button">
-          <span class="button__text button__text--modal-modile">Ок</span>
-        </button>
-      </div>
+    </div>
+  </div>
 
-    </header>
+  <div class="modal">
+    <span class="modal__title">Что-то пошло не так!</span>
+    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__button button" type="button">
+      <span class="button__text button__text--modal-modile">Ок</span>
+    </button>
+  </div>
 
+  <div class="modal">
+    <span class="modal__title">Ваш отзыв отправлен!</span>
+    <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.ь</p>
+    <button class="modal__button button" type="button">
+      <span class="button__text button__text--modal-modile">Ок</span>
+    </button>
+  </div>
   </body>
 </html>
 
