@@ -1,5 +1,6 @@
-// @import "./common/variables.scss";
-// @import "./common/extends.scss";
+@import "./common/variables.scss";
+@import "./common/extends.scss";
+@import "./common/mixins.scss";
 
 
 @font-face {
@@ -32,63 +33,88 @@ body {
   overflow: hidden;
 }
 
-.page-container__hero {
-  margin: 0;
-  background-image: url(../img/images/Main-background.jpg);
-  background-position: center;
-  padding: 90px 19px 85px 19px;
+.page-header__logo {
+
 }
 
-.advantages__preview {
-  padding: 32px 19px 16px 19px;
+.page-header__navigation {
+  background-color: $color-blue;
+}
+.navigation {
+}
+
+.navigation__list {
+  margin: 0;
+  padding-right: 78px;
+  padding-left: 77px;
+  list-style-type: none;
   text-align: center;
 }
 
-.advantages__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
+.navigation__item {
+  padding-top: 17px;
+  padding-bottom: 12px;
+}
+
+.navigation__item--current {
+}
+
+.navigation__link {
+  @include font-bold(18px);
+  text-decoration: none;
+  color: $color-white;
+}
+
+.navigation__item {
+}
+
+.page-container__hero {
+  background-image: url(../img/images/Main-background.jpg);
+  background-position: center;
+  padding: 90px 19px 85px 19px;
   margin: 0;
+}
+
+.advantages__preview {
+  background-color: $color-white;
+  text-align: center;
+  padding: 32px 19px 16px 19px;
+}
+
+.advantages__title {
+  @include font-bold(18px);
   padding-bottom: 35px;
+  margin: 0;
 }
 .advantages__text {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  @extend %font-regular;
   margin: 0;
+  color: $color-gray;
 }
 
 .advantages__card {
   text-align: center;
-
 }
 
 .advantages-card--main {
-  background-color: #81B3D2;
+  background-color: $color-blue;
+  color: $color-white;
   padding: 54px 19px 40px 19px;
-  color: #FFFFFF;
 }
 
 .advantages-card__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin: 0;
+  @include font-bold(18px);
   padding-bottom: 40px;
+  margin: 0;
 }
 
 .advantages-card__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  @extend %font-regular;
   margin: 0;
 }
 
 .advantages__recommend {
-  background-color: #ffffff;
+  background-color: $color-white;
   padding: 23px 18px 52px 65px;
 }
 
@@ -96,9 +122,9 @@ body {
 }
 
 .recommend__list {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .recommend__item:not(:last-child) {
@@ -106,36 +132,35 @@ body {
 }
 
 .recommend__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin: 0;
+  @include font-bold(18px);
   padding-bottom: 16px;
+  margin: 0;
 }
 
 .recommend__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  @extend %font-regular;
+  color: $color-gray;
   margin: 0;
 }
 
 
 // other reason
 .advantages-card--light {
-  background-color: #D6D6D6;
+  background-color: $color-gray-light;
   padding: 26px 18px 26px 18px;
 }
 
 .advantages__card-list {
-  margin: 0;
   list-style-type: none;
+  margin: 0;
 }
 
 .advantages-card-item:not(:last-child) {
   padding-bottom: 49px;
+}
+
+.advantages-card__description--light {
+  color: $color-gray;
 }
 
 // Offer
@@ -144,30 +169,25 @@ body {
 }
 
 .more {
-  background-color: #FFFFFF;
+  background-color: $color-white;
   text-align: center;
 }
 
 .more__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin: 0;
+  @include font-bold(18px);
   padding-bottom: 16px;
+  margin: 0;
 }
 
 .more__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  margin: 0;
+  @extend %font-regular;
+  color: $color-gray;
   padding-bottom: 32px;
+  margin: 0;
 }
 
 .more__button {
-  background-color: #81B3D2;
+  background-color: $color-blue;
   padding: 16px 49px;
 }
 
@@ -176,16 +196,12 @@ body {
 }
 
 .button__text {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  color: $color-white;
 }
 
 // footer
 .page-footer {
-  background-color: #FFFFFF;
+  background-color: $color-white;
   padding: 23px 77px  20px 77px;
 
 }
@@ -199,10 +215,7 @@ body {
 }
 
 .hashtag__text {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
+  @include font-bold(21px);
 }
 
 .page-footer__social {
@@ -213,17 +226,17 @@ body {
 }
 
 .social__list {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .social__item {
+  background-color: $color-blue;
   width: 48px;
   height: 48px;
-  background-color: #81B3D2;
   padding: 0;
 
 }
@@ -244,10 +257,7 @@ body {
 .copyright {
 }
 .copyright__title {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  @extend %font-regular;
   margin: 0;
 }
 

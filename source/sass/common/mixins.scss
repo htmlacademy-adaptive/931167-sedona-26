@@ -1,0 +1,6 @@
+@mixin font-bold($font-size) {
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: 26px;
+  text-transform: uppercase;
+}
