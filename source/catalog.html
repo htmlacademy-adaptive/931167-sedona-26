@@ -13,20 +13,20 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <a class="page-header__logo" href="">
-      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип города Седона">
+      <img class="page-header__logo-image" src="./img/images/logo.jpg" width="185" height="96" alt="Логотип города Седона">
     </a>
     <nav class="page-header__navigation navigation">
       <ul class="navigation__list">
-        <li class="navigation__item navigation__item">
+        <li class="navigation__item">
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
-        <li class="navigation__item--current">
+        <li class="navigation__item navigation__item--current">
           <a class="navigation__link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="form.html">Форма отзыва</a>
         </li>
-        <li class="navigation__itemt">
+        <li class="navigation__item">
           <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
         </li>
       </ul>
@@ -37,7 +37,9 @@
   <main class="catalog-container">
     <h1 class="visually-hidden">Каталог с фотографиями и видео</h1>
     <section class="catalog-container__hero hero">
-      <img class="hero__logo" src="" alt="Седона">
+      <div class="hero__image-container">
+        <img class="hero__image" src="./img/icons/SEDONA.svg" alt="Главная надпись на английском">
+      </div>
       <h2 class="hero__title">Фото и видео</h2>
       <p class="hero__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </section>
@@ -45,7 +47,7 @@
       <h2 class="visually-hidden">Галерея фото и видео</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <img class="gallery__image" src="" alt="Неродный просторы">
+          <img class="gallery__image" src="./img/images/catalog-mobile-photo-1.jpg" width="280" height="280" alt="Неродный просторы">
           <div class="gallery__description">
             <p class="gallery__title">Неродные просторы</з>
             <p class="gallery__author">Автор фото: Борис</p>
@@ -64,7 +66,7 @@
     <section class="catalog-container__proof more">
       <h3 class="more__title">Все еще сомневаетесь?</h3>
       <p class="more__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <img class="more__video" src="" alt="Видео-презентация">
+      <img class="more__video" src="./img/images/catalog-map.jpg" alt="Видео-презентация">
     </section>
   </main>
 
@@ -80,20 +82,27 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="#">
-            <svg class="social__icon" aria-hidden="true"></svg>
+            <!-- <svg class="social__icon" aria-hidden="true"></svg> -->
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="#">
-            <svg class="social__icon" aria-hidden="true"></svg>
+            <!-- <svg class="social__icon" aria-hidden="true"></svg> -->
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
-            <svg class="social__icon" aria-hidden="true"></svg>
+            <!-- <svg class="social__icon" aria-hidden="true"></svg> -->
           </a>
         </li>
       </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <span class="copyright__title">Разработано</span>
+      <a class="copyright__link" href="#">
+        <span class="visually-hidden">HTML ACADEMY</span>
+        <!-- <svg class="copyright__"></svg> -->
+      </a>
     </div>
   </footer>
 </body>

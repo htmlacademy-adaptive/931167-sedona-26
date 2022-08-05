@@ -40,15 +40,16 @@ body {
 .page-header__navigation {
   background-color: $color-blue;
 }
+
 .navigation {
 }
 
 .navigation__list {
-  margin: 0;
-  padding-right: 78px;
-  padding-left: 77px;
   list-style-type: none;
   text-align: center;
+  padding-right: 78px;
+  padding-left: 77px;
+  margin: 0;
 }
 
 .navigation__item {
@@ -79,18 +80,19 @@ body {
   background-color: $color-white;
   text-align: center;
   padding: 32px 19px 16px 19px;
+
+  .advantages__title {
+    @include font-bold(18px);
+    padding-bottom: 35px;
+  }
+
+  .advantages__text {
+    @extend %font-regular;
+    color: #333333;
+  }
 }
 
-.advantages__title {
-  @include font-bold(18px);
-  padding-bottom: 35px;
-  margin: 0;
-}
-.advantages__text {
-  @extend %font-regular;
-  margin: 0;
-  color: $color-gray;
-}
+
 
 .advantages__card {
   text-align: center;
@@ -105,12 +107,10 @@ body {
 .advantages-card__title {
   @include font-bold(18px);
   padding-bottom: 40px;
-  margin: 0;
 }
 
 .advantages-card__description {
   @extend %font-regular;
-  margin: 0;
 }
 
 .advantages__recommend {
@@ -134,13 +134,11 @@ body {
 .recommend__title {
   @include font-bold(18px);
   padding-bottom: 16px;
-  margin: 0;
 }
 
 .recommend__description {
   @extend %font-regular;
   color: $color-gray;
-  margin: 0;
 }
 
 
@@ -171,39 +169,38 @@ body {
 .more {
   background-color: $color-white;
   text-align: center;
+
+  .more__title {
+    @include font-bold(18px);
+    padding-bottom: 16px;
+  }
+
+  .more__description {
+    @extend %font-regular;
+    color: $color-gray;
+    padding-bottom: 32px;
+  }
+
+  .more__button {
+    background-color: $color-blue;
+    padding: 16px 49px;
+
+    .button__text {
+      @include font-bold(21px);
+      color: $color-white;
+    }
+  }
+
+  .button {
+    border: none;
+  }
 }
 
-.more__title {
-  @include font-bold(18px);
-  padding-bottom: 16px;
-  margin: 0;
-}
-
-.more__description {
-  @extend %font-regular;
-  color: $color-gray;
-  padding-bottom: 32px;
-  margin: 0;
-}
-
-.more__button {
-  background-color: $color-blue;
-  padding: 16px 49px;
-}
-
-.button {
-  border: none;
-}
-
-.button__text {
-  color: $color-white;
-}
 
 // footer
 .page-footer {
   background-color: $color-white;
   padding: 23px 77px  20px 77px;
-
 }
 
 .page-footer__hashtag {
@@ -223,23 +220,24 @@ body {
 
 .social {
   padding-bottom: 40px;
+
+  .social__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+    .social__item {
+      background-color: $color-blue;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+    }
+  }
 }
 
-.social__list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-}
 
-.social__item {
-  background-color: $color-blue;
-  width: 48px;
-  height: 48px;
-  padding: 0;
-
-}
 
 .social__link {
 
@@ -258,7 +256,6 @@ body {
 }
 .copyright__title {
   @extend %font-regular;
-  margin: 0;
 }
 
 .copyright__link {
@@ -266,3 +263,110 @@ body {
 
 .copyright__ {
 }
+
+
+// catalog
+.catalog-container {
+
+
+
+  .hero__image-container {
+    background-image: url("../img/images/catalog-background-desktop.jpg.jpg");
+    padding: 52px 40px 67px 40px;
+  }
+
+  .hero {
+  }
+
+  .hero__image {
+  }
+  .hero__title {
+    @include font-bold(21px);
+    text-align: center;
+  }
+
+  .hero__text {
+    @extend %font-regular;
+    text-align: center;
+  }
+
+}
+
+
+
+.catalog-container__gallery {
+}
+.gallery {
+}
+.visually-hidden {
+}
+
+.gallery__list {
+  list-style-type: none;
+  padding: 24px 20px 120px 20px;
+  margin: 0;
+  background-color: $color-white;
+}
+
+.gallery__item {
+
+}
+
+.gallery__image {
+}
+
+.gallery__description {
+  padding-bottom: 11px;
+
+}
+
+.gallery__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.gallery__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+}
+.gallery__social {
+}
+.gallery__like {
+}
+.gallery__likes {
+}
+
+
+
+
+
+.catalog-container__proof {
+  padding: 17px 20px 0;
+
+  .more {
+  }
+
+  .more__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+  .more__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .more__video {
+  }
+}
+
