@@ -1,1 +1,258 @@
-// Начните писать стили здесь
+// @import "./common/variables.scss";
+// @import "./common/extends.scss";
+
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsansbold.woff2);
+  font-weight: 700;
+}
+
+body {
+  font-family: "PT Sans";
+  background-color: peachpuff;
+  width: 320px;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.page-container__hero {
+  margin: 0;
+  background-image: url(../img/images/Main-background.jpg);
+  background-position: center;
+  padding: 90px 19px 85px 19px;
+}
+
+.advantages__preview {
+  padding: 32px 19px 16px 19px;
+  text-align: center;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 35px;
+}
+.advantages__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages__card {
+  text-align: center;
+
+}
+
+.advantages-card--main {
+  background-color: #81B3D2;
+  padding: 54px 19px 40px 19px;
+  color: #FFFFFF;
+}
+
+.advantages-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.advantages-card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages__recommend {
+  background-color: #ffffff;
+  padding: 23px 18px 52px 65px;
+}
+
+.recommend {
+}
+
+.recommend__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.recommend__item:not(:last-child) {
+  padding-bottom: 22px;
+}
+
+.recommend__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.recommend__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+// other reason
+.advantages-card--light {
+  background-color: #D6D6D6;
+  padding: 26px 18px 26px 18px;
+}
+
+.advantages__card-list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.advantages-card-item:not(:last-child) {
+  padding-bottom: 49px;
+}
+
+// Offer
+.page-container__offer {
+  padding: 38px 18px 49px 18px;
+}
+
+.more {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.more__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.more__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 32px;
+}
+
+.more__button {
+  background-color: #81B3D2;
+  padding: 16px 49px;
+}
+
+.button {
+  border: none;
+}
+
+.button__text {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+// footer
+.page-footer {
+  background-color: #FFFFFF;
+  padding: 23px 77px  20px 77px;
+
+}
+
+.page-footer__hashtag {
+}
+
+.hashtag {
+  text-align: center;
+  padding-bottom: 33px;
+}
+
+.hashtag__text {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.page-footer__social {
+}
+
+.social {
+  padding-bottom: 40px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  background-color: #81B3D2;
+  padding: 0;
+
+}
+
+.social__link {
+
+}
+.social__link--vkontakte {
+}
+.social__icon {
+}
+.social__link--telegram {
+}
+.social__link--youtube {
+}
+.page-footer__copyright {
+}
+.copyright {
+}
+.copyright__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.copyright__link {
+}
+
+.copyright__ {
+}
