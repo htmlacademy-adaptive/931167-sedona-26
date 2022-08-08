@@ -1,0 +1,33 @@
+.page-header__logo {
+
+}
+
+.page-header__navigation {
+  background-color: $color-blue;
+
+  .navigation {
+  }
+
+  .navigation__list {
+    list-style-type: none;
+    text-align: center;
+    padding-right: 78px;
+    padding-left: 77px;
+    margin: 0;
+
+    .navigation__item {
+      padding-top: 17px;
+      padding-bottom: 12px;
+
+      .navigation__item--current {
+      }
+
+      .navigation__link {
+        @include font-bold(18px);
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  }
+}
+

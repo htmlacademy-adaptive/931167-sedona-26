@@ -1,0 +1,66 @@
+// footer
+.page-footer {
+  background-color: $color-white;
+  padding: 23px 77px  20px 77px;
+}
+
+.page-footer__hashtag {
+}
+
+.hashtag {
+  text-align: center;
+  padding-bottom: 33px;
+}
+
+.hashtag__text {
+  @include font-bold(21px);
+}
+
+.page-footer__social {
+}
+
+.social {
+  padding-bottom: 40px;
+
+  .social__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+    .social__item {
+      background-color: $color-blue;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+    }
+  }
+}
+
+
+
+.social__link {
+
+}
+.social__link--vkontakte {
+}
+.social__icon {
+}
+.social__link--telegram {
+}
+.social__link--youtube {
+}
+.page-footer__copyright {
+}
+.copyright {
+}
+.copyright__title {
+  @extend %font-regular;
+}
+
+.copyright__link {
+}
+
+.copyright__ {
+}

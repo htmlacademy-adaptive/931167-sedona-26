@@ -1,19 +1,21 @@
+@import "./common/fonts.scss";
 @import "./common/variables.scss";
+@import "./common/colors.scss";
 @import "./common/extends.scss";
 @import "./common/mixins.scss";
 
+@import "./blocks/header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/preview.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/recommend.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/footer.scss";
 
-@font-face {
-  font-family: "PT Sans";
-  src: url(../fonts/ptsans.woff2);
-  font-weight: 400;
-}
+@import "./blocks/proof.scss";
+@import "./blocks/form.scss";
 
-@font-face {
-  font-family: "PT Sans";
-  src: url(../fonts/ptsansbold.woff2);
-  font-weight: 700;
-}
+
 
 body {
   font-family: "PT Sans";
@@ -33,266 +35,7 @@ body {
   overflow: hidden;
 }
 
-.page-header__logo {
-
-}
-
-.page-header__navigation {
-  background-color: $color-blue;
-}
-
-.navigation {
-}
-
-.navigation__list {
-  list-style-type: none;
-  text-align: center;
-  padding-right: 78px;
-  padding-left: 77px;
-  margin: 0;
-}
-
-.navigation__item {
-  padding-top: 17px;
-  padding-bottom: 12px;
-}
-
-.navigation__item--current {
-}
-
-.navigation__link {
-  @include font-bold(18px);
-  text-decoration: none;
-  color: $color-white;
-}
-
-.navigation__item {
-}
-
-.page-container__hero {
-  background-image: url(../img/images/Main-background.jpg);
-  background-position: center;
-  padding: 90px 19px 85px 19px;
-  margin: 0;
-}
-
-.advantages__preview {
-  background-color: $color-white;
-  text-align: center;
-  padding: 32px 19px 16px 19px;
-
-  .advantages__title {
-    @include font-bold(18px);
-    padding-bottom: 35px;
-  }
-
-  .advantages__text {
-    @extend %font-regular;
-    color: #333333;
-  }
-}
-
-
-
-.advantages__card {
-  text-align: center;
-}
-
-.advantages-card--main {
-  background-color: $color-blue;
-  color: $color-white;
-  padding: 54px 19px 40px 19px;
-}
-
-.advantages-card__title {
-  @include font-bold(18px);
-  padding-bottom: 40px;
-}
-
-.advantages-card__description {
-  @extend %font-regular;
-}
-
-.advantages__recommend {
-  background-color: $color-white;
-  padding: 23px 18px 52px 65px;
-}
-
-.recommend {
-}
-
-.recommend__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.recommend__item:not(:last-child) {
-  padding-bottom: 22px;
-}
-
-.recommend__title {
-  @include font-bold(18px);
-  padding-bottom: 16px;
-}
-
-.recommend__description {
-  @extend %font-regular;
-  color: $color-gray;
-}
-
-
-// other reason
-.advantages-card--light {
-  background-color: $color-gray-light;
-  padding: 26px 18px 26px 18px;
-}
-
-.advantages__card-list {
-  list-style-type: none;
-  margin: 0;
-}
-
-.advantages-card-item:not(:last-child) {
-  padding-bottom: 49px;
-}
-
-.advantages-card__description--light {
-  color: $color-gray;
-}
-
-// Offer
-.page-container__offer {
-  padding: 38px 18px 49px 18px;
-}
-
-.more {
-  background-color: $color-white;
-  text-align: center;
-
-  .more__title {
-    @include font-bold(18px);
-    padding-bottom: 16px;
-  }
-
-  .more__description {
-    @extend %font-regular;
-    color: $color-gray;
-    padding-bottom: 32px;
-  }
-
-  .more__button {
-    background-color: $color-blue;
-    padding: 16px 49px;
-
-    .button__text {
-      @include font-bold(21px);
-      color: $color-white;
-    }
-  }
-
-  .button {
-    border: none;
-  }
-}
-
-
-// footer
-.page-footer {
-  background-color: $color-white;
-  padding: 23px 77px  20px 77px;
-}
-
-.page-footer__hashtag {
-}
-
-.hashtag {
-  text-align: center;
-  padding-bottom: 33px;
-}
-
-.hashtag__text {
-  @include font-bold(21px);
-}
-
-.page-footer__social {
-}
-
-.social {
-  padding-bottom: 40px;
-
-  .social__list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-
-    .social__item {
-      background-color: $color-blue;
-      width: 48px;
-      height: 48px;
-      padding: 0;
-    }
-  }
-}
-
-
-
-.social__link {
-
-}
-.social__link--vkontakte {
-}
-.social__icon {
-}
-.social__link--telegram {
-}
-.social__link--youtube {
-}
-.page-footer__copyright {
-}
-.copyright {
-}
-.copyright__title {
-  @extend %font-regular;
-}
-
-.copyright__link {
-}
-
-.copyright__ {
-}
-
-
 // catalog
-.catalog-container {
-
-
-
-  .hero__image-container {
-    background-image: url("../img/images/catalog-background-desktop.jpg.jpg");
-    padding: 52px 40px 67px 40px;
-  }
-
-  .hero {
-  }
-
-  .hero__image {
-  }
-  .hero__title {
-    @include font-bold(21px);
-    text-align: center;
-  }
-
-  .hero__text {
-    @extend %font-regular;
-    text-align: center;
-  }
-
-}
-
-
 
 .catalog-container__gallery {
 }
@@ -342,31 +85,4 @@ body {
 
 
 
-
-
-.catalog-container__proof {
-  padding: 17px 20px 0;
-
-  .more {
-  }
-
-  .more__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-  .more__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  .more__video {
-  }
-}
 
