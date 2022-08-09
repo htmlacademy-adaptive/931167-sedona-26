@@ -1,0 +1,53 @@
+// catalog
+
+.catalog-container__gallery {
+}
+.gallery {
+}
+.visually-hidden {
+}
+
+.gallery__list {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  background-color: $color-white;
+
+  .gallery__item {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    .gallery__image {
+    }
+
+    .gallery__description {
+      padding-bottom: 11px;
+
+      .gallery__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .gallery__author {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0;
+      }
+    }
+
+    .gallery__social {
+
+      .gallery__like {
+      }
+      .gallery__likes {
+      }
+    }
+  }
+}
+
+
+

@@ -13,7 +13,15 @@
 @import "./blocks/footer.scss";
 
 @import "./blocks/proof.scss";
-@import "./blocks/form.scss";
+@import "./blocks/gallery.scss";
+
+// form
+@import "./form/main.scss";
+@import "./form/contacts.scss";
+@import "./form/radio.scss";
+@import "./form/checkbox.scss";
+@import "./form/textarea.scss";
+@import "./blocks/button.scss";
 
 
 
@@ -21,7 +29,10 @@ body {
   font-family: "PT Sans";
   background-color: peachpuff;
   width: 320px;
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: start;
 }
 
 .visually-hidden {
@@ -34,55 +45,3 @@ body {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-
-// catalog
-
-.catalog-container__gallery {
-}
-.gallery {
-}
-.visually-hidden {
-}
-
-.gallery__list {
-  list-style-type: none;
-  padding: 24px 20px 120px 20px;
-  margin: 0;
-  background-color: $color-white;
-}
-
-.gallery__item {
-
-}
-
-.gallery__image {
-}
-
-.gallery__description {
-  padding-bottom: 11px;
-
-}
-
-.gallery__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  margin: 0;
-}
-.gallery__author {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  margin: 0;
-}
-.gallery__social {
-}
-.gallery__like {
-}
-.gallery__likes {
-}
-
-
-
-

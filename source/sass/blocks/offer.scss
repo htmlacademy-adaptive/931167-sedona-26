@@ -15,20 +15,10 @@
   .more__description {
     @extend %font-regular;
     color: $color-gray;
-    padding-bottom: 32px;
+    padding-bottom: 38px;
   }
 
   .more__button {
-    background-color: $color-blue;
     padding: 16px 49px;
-
-    .button__text {
-      @include font-bold(21px);
-      color: $color-white;
-    }
-  }
-
-  .button {
-    border: none;
   }
 }
