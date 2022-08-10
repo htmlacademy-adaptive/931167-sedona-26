@@ -1,0 +1,24 @@
+.button {
+  background-color: $color-blue;
+  border: none;
+
+  .button__text {
+    @include font-bold(21px);
+    color: $color-white;
+  }
+}
+
+.feedback__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback__button {
+  padding: 18.5px 33px 13.5px 33px;
+}
+
+.necessarily {
+  text-align: end;
+}

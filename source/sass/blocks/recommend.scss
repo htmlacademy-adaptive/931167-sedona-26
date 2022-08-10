@@ -1,0 +1,23 @@
+
+.recommend {
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    .recommend__item:not(:last-child) {
+    padding-bottom: 22px;
+
+      .recommend__title {
+        @include font-bold(18px);
+        padding-bottom: 16px;
+      }
+
+      .recommend__description {
+        @extend %font-regular;
+        color: $color-gray;
+      }
+    }
+  }
+}

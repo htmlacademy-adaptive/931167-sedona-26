@@ -1,0 +1,15 @@
+.page__preview {
+  background-color: $color-white;
+  text-align: center;
+  padding: 32px 19px 16px 19px;
+
+  .page__title {
+    @include font-bold(18px);
+    padding-bottom: 35px;
+  }
+
+  .page__text {
+    @extend %font-regular;
+    color: #333333;
+  }
+}

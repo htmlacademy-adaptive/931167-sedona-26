@@ -1,0 +1,24 @@
+// Offer
+.page-container__offer {
+  padding: 38px 18px 49px 18px;
+}
+
+.more {
+  background-color: $color-white;
+  text-align: center;
+
+  .more__title {
+    @include font-bold(18px);
+    padding-bottom: 16px;
+  }
+
+  .more__description {
+    @extend %font-regular;
+    color: $color-gray;
+    padding-bottom: 38px;
+  }
+
+  .more__button {
+    padding: 16px 49px;
+  }
+}

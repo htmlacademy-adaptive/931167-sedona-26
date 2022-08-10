@@ -1,0 +1,42 @@
+.advantages-card--main {
+  background-color: $color-blue;
+  color: $color-white;
+  padding: 54px 19px 40px 19px;
+}
+
+.advantages__card {
+  text-align: center;
+
+  .advantages-card__title {
+    @include font-bold(18px);
+    padding-bottom: 40px;
+  }
+
+  .advantages-card__description {
+    @extend %font-regular;
+  }
+}
+
+.advantages__recommend {
+  background-color: $color-white;
+  padding: 23px 18px 52px 65px;
+}
+
+// other reason
+.advantages-card--light {
+  background-color: $background-gray;
+  padding: 26px 18px 26px 18px;
+}
+
+.advantages__card-list {
+  list-style-type: none;
+  margin: 0;
+
+  .advantages-card-item:not(:last-child) {
+    padding-bottom: 49px;
+  }
+
+  .advantages-card__description--light {
+    color: $color-gray;
+  }
+}

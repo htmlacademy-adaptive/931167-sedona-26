@@ -1,0 +1,15 @@
+.textarea {
+  padding-bottom: 56px;
+
+  .feedback__textarea {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    height: 150px;
+    border: none;
+    resize: none;
+    padding: 16px;
+    background-color: $fordFieldsColor;
+  }
+}

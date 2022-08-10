@@ -1,0 +1,57 @@
+.feedback__group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  // background-color: $color-white;
+
+
+  .feedback__title {
+    @include font-bold(18px);
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .feedback__wrapper {
+    @extend %font-regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .person__label:not(:first-child) {
+      padding-top: 20px;
+    }
+
+    .person__input, .contacts__input {
+      border: none;
+      padding: 16px;
+      background-color: $fordFieldsColor;
+    }
+  }
+}
+
+.user {
+  padding-bottom: 64px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 59px;
+}
+
+.radio {
+  padding-bottom: 13px;
+}
+
+.checkbox {
+  padding-bottom: 13px;
+}
+
+
+.phone {
+  padding-bottom: 16px;
+}

@@ -1,1 +1,45 @@
-// Начните писать стили здесь
+@import "./common/fonts.scss";
+@import "./common/variables.scss";
+@import "./common/colors.scss";
+@import "./common/extends.scss";
+@import "./common/mixins.scss";
+
+@import "./blocks/header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/preview.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/recommend.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/footer.scss";
+
+@import "./blocks/proof.scss";
+@import "./blocks/gallery.scss";
+
+// form
+@import "./form/main.scss";
+@import "./form/contacts.scss";
+@import "./form/radio.scss";
+@import "./form/checkbox.scss";
+@import "./form/textarea.scss";
+@import "./blocks/button.scss";
+
+body {
+  font-family: "PT Sans";
+  background-color: peachpuff;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: start;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

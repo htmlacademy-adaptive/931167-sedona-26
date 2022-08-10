@@ -1,0 +1,46 @@
+.page-header {
+  height: 56px;
+  background-color: $color-white;
+
+  .page-header__logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    .page-header__logo-image {
+    }
+  }
+
+  .page-header__navigation {
+    background-color: $color-blue;
+    display: none;
+
+    .navigation {
+    }
+
+    .navigation__list {
+      list-style-type: none;
+      text-align: center;
+      padding-right: 78px;
+      padding-left: 77px;
+      margin: 0;
+
+      .navigation__item {
+        padding-top: 17px;
+        padding-bottom: 12px;
+
+        .navigation__item--current {
+        }
+
+        .navigation__link {
+          @include font-bold(18px);
+          text-decoration: none;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
