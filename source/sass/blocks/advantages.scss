@@ -1,7 +1,18 @@
+.page-container__advantages {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages-card--main {
   background-color: $color-blue;
   color: $color-white;
   padding: 54px 19px 40px 19px;
+}
+
+.advantages-card--second {
+  background-color: $color-blue;
+  color: $color-white;
+  padding: 39px 16px 35px 15px;
 }
 
 .advantages__card {
@@ -9,7 +20,10 @@
 
   .advantages-card__title {
     @include font-bold(18px);
-    padding-bottom: 40px;
+    padding-bottom: 49px;
+  }
+  &--second {
+    padding: 39px 16px 35px 15px;
   }
 
   .advantages-card__description {
@@ -19,13 +33,23 @@
 
 .advantages__recommend {
   background-color: $color-white;
-  padding: 23px 18px 52px 65px;
+  padding: 31px 18px 52px 62px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 // other reason
 .advantages-card--light {
   background-color: $background-gray;
   padding: 26px 18px 26px 18px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 40px 41px 33px;
+  }
 }
 
 .advantages__card-list {

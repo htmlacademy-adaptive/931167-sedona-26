@@ -3,6 +3,7 @@
 @import "./common/colors.scss";
 @import "./common/extends.scss";
 @import "./common/mixins.scss";
+@import "./common/media.scss";
 
 @import "./blocks/header.scss";
 @import "./blocks/hero.scss";
@@ -14,6 +15,8 @@
 
 @import "./blocks/proof.scss";
 @import "./blocks/gallery.scss";
+@import "./blocks/location.scss";
+
 
 // form
 @import "./form/main.scss";
@@ -23,14 +26,29 @@
 @import "./form/textarea.scss";
 @import "./blocks/button.scss";
 
+
+
+
+
+.page {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
 body {
-  font-family: "PT Sans";
   background-color: peachpuff;
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   // justify-content: start;
+
+  @media (min-width: $mobile-width-only) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+  }
 }
 
 .visually-hidden {
@@ -43,3 +61,5 @@ body {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
+

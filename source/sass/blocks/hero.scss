@@ -1,11 +1,22 @@
 .page-container__hero {
-  background-image: url(../img/images/Main-background.jpg);
-  background-position: center;
+  background-image: url(../img/images/Main-background-modile.jpg);
+  background-position: top;
   padding: 90px 19px 85px 19px;
   margin: 0;
+  text-align: center;
+
+  .hero__image {
+    max-width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/images/Main-background-desktop.jpg);
+  }
 }
 
 .hero {
   background-image: url("../img/images/catalog-background-desktop.jpg.jpg");
   padding: 52px 40px 67px 40px;
+
+
 }

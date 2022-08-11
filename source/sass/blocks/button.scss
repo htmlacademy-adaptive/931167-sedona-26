@@ -1,6 +1,8 @@
 .button {
   background-color: $color-blue;
   border: none;
+  @include font-bold(21px);
+  color: $color-white;
 
   .button__text {
     @include font-bold(21px);

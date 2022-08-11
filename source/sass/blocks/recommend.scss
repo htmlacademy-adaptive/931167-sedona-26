@@ -1,23 +1,44 @@
-
 .recommend {
-
   &__list {
     list-style-type: none;
     padding: 0;
     margin: 0;
 
+    @media (min-width: $mobile-width-only) {
+
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      padding: 63px 31px 59px 36px;
+      text-align: center;
+    }
+
+
     .recommend__item:not(:last-child) {
-    padding-bottom: 22px;
+      padding-bottom: 30px;
 
-      .recommend__title {
-        @include font-bold(18px);
-        padding-bottom: 16px;
-      }
+    }
 
-      .recommend__description {
-        @extend %font-regular;
-        color: $color-gray;
+    .recommend__item {
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
       }
     }
   }
+}
+
+.recommend__title {
+  @include font-bold(18px);
+  padding-bottom: 16px;
+}
+
+.recommend__description {
+  @extend %font-regular;
+  color: $color-gray;
 }

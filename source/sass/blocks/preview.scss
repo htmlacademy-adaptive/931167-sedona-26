@@ -1,15 +1,34 @@
 .page__preview {
   background-color: $color-white;
   text-align: center;
-  padding: 32px 19px 16px 19px;
+  padding: 32px 19px 32px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 390px;
+    padding-right: 390px;
+  }
 
   .page__title {
     @include font-bold(18px);
     padding-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+
+    }
+
   }
 
   .page__text {
     @extend %font-regular;
     color: #333333;
+
+    @media (min-width: $tablet-width) {
+
+    }
   }
 }
