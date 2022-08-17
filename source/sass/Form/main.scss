@@ -1,3 +1,22 @@
 .form-container {
   background-color: $color-white;
 }
+
+
+.form-container__feedback {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "user contacts"
+    "radio radio"
+    "checkbox checkbox"
+    "textarea textarea"
+    "button button";
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}

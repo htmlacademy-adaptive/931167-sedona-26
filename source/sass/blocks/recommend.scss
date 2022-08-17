@@ -4,20 +4,24 @@
     padding: 0;
     margin: 0;
 
-    @media (min-width: $mobile-width-only) {
-
-    }
-
     @media (min-width: $tablet-width) {
       display: flex;
-      padding: 63px 31px 59px 36px;
+      justify-content: space-between;
+      padding: 157px 31px 59px 36px;
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 157px 78px 79px 58px;
     }
 
 
     .recommend__item:not(:last-child) {
       padding-bottom: 30px;
 
+      @media (min-width: $tablet-width) {
+        padding: 0;
+      }
     }
 
     .recommend__item {
@@ -25,9 +29,13 @@
       @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
         padding: 0;
+        max-width: 193px;
+      }
+
+      @media (min-width: $desktop-width) {
+        max-width: 278px;
       }
     }
   }

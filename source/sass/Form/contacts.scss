@@ -8,7 +8,6 @@
   padding-right: 20px;
   // background-color: $color-white;
 
-
   .feedback__title {
     @include font-bold(18px);
     padding-bottom: 20px;
@@ -35,12 +34,26 @@
 
 .user {
   padding-bottom: 64px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: user;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
   padding-bottom: 59px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: contacts;
+    padding: 0;
+  }
 }
 
 .phone {

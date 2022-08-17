@@ -35,8 +35,7 @@
   @include font-bold(21px);
 }
 
-.page-footer__social {
-}
+
 
 .social {
   padding-bottom: 40px;
@@ -89,6 +88,16 @@
   }
 }
 
-.copyright__title {
-  @extend %font-regular;
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+
+  .copyright__title {
+    @extend %font-regular;
+  }
+
+  .social__icon {
+    margin-left: 13px;
+  }
 }
+

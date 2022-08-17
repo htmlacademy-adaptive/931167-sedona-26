@@ -1,6 +1,10 @@
 .textarea {
   padding-bottom: 56px;
 
+  @media (min-width: $tablet-width) {
+    grid-area: textarea;
+  }
+
   .feedback__textarea {
     font-weight: 700;
     font-size: 18px;

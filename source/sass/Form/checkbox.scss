@@ -1,3 +1,19 @@
 .checkbox {
   padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: checkbox;
+    padding: 0;
+  }
+}
+
+
+.feedback__checkbox {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 224px 224px;
+    grid-template-rows: 46px 46px;
+    grid-column-gap: 32px;
+    grid-row-gap: 16px;
+  }
 }

@@ -4,13 +4,11 @@
   padding: 32px 19px 32px 19px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 124px;
-    padding-right: 124px;
+    padding: 55.5px 124px 47.5px 124px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 390px;
-    padding-right: 390px;
+    padding: 59px 358px 45px 358px;
   }
 
   .page__title {
@@ -30,5 +28,25 @@
     @media (min-width: $tablet-width) {
 
     }
+  }
+}
+
+.page__preview--catalog {
+  @media (min-width: $tablet-width) {
+    padding: 63px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 371px 65px 371px;
+  }
+}
+
+.page__preview--form {
+  @media (min-width: $tablet-width) {
+    padding: 64px 166px 102px 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 383px 67px 383px;
   }
 }
