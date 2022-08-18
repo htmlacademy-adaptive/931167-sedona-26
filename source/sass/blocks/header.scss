@@ -1,36 +1,77 @@
 .page-header {
+  position: relative;
   height: 56px;
   background-color: $color-white;
+
+  .page-header__toggle {
+    display: block;
+    border: none;
+    background-color: $color-white;
+    padding: 0;
+    height: 22px;
+    margin-left: auto;
+    margin-top: 17px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    .page-header__burger {
+
+    }
+  }
 
   .page-header__logo {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
+    top: 0;
     left: 0;
     right: 0;
     text-align: center;
-
-    .page-header__logo-image {
-    }
+    max-width: 185px;
   }
 
   .page-header__navigation {
     background-color: $color-blue;
     display: none;
 
+    @media (min-width: $tablet-width) {
+      display: block;
+      background-color: $color-white;
+      color: black;
+      // flex-direction: column;
+    }
+
     .navigation {
     }
 
     .navigation__list {
       list-style-type: none;
-      text-align: center;
-      padding-right: 78px;
-      padding-left: 77px;
       margin: 0;
+      padding: 0;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media (min-width: $desktop-width) {
+      }
 
       .navigation__item {
-        padding-top: 17px;
-        padding-bottom: 12px;
+        padding-top: 18px;
+        text-align: center;
+
+        @media (min-width: $tablet-width) {
+          min-width: 153px;
+        }
+
+        @media (min-width: $desktop-width) {
+          min-width: 240px;
+        }
 
         .navigation__item--current {
         }
@@ -39,7 +80,15 @@
           @include font-bold(18px);
           text-decoration: none;
           color: $color-white;
+
+          @media (min-width: $tablet-width) {
+            color: $color-black;
+          }
         }
+      }
+
+      .navigation__item:nth-of-type(2) {
+        margin-right: auto;
       }
     }
   }

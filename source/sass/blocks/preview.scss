@@ -1,15 +1,52 @@
 .page__preview {
   background-color: $color-white;
   text-align: center;
-  padding: 32px 19px 16px 19px;
+  padding: 32px 19px 32px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55.5px 124px 47.5px 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 358px 45px 358px;
+  }
 
   .page__title {
     @include font-bold(18px);
     padding-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+
+    }
+
   }
 
   .page__text {
     @extend %font-regular;
     color: #333333;
+
+    @media (min-width: $tablet-width) {
+
+    }
+  }
+}
+
+.page__preview--catalog {
+  @media (min-width: $tablet-width) {
+    padding: 63px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 371px 65px 371px;
+  }
+}
+
+.page__preview--form {
+  @media (min-width: $tablet-width) {
+    padding: 64px 166px 102px 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 383px 67px 383px;
   }
 }

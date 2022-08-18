@@ -1,42 +1,109 @@
-.advantages-card--main {
+.page-container__advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-card-container {
   background-color: $color-blue;
   color: $color-white;
   padding: 54px 19px 40px 19px;
+
+
+  @media (min-width: $tablet-width) {
+    max-width: 192px;
+    min-height: 173px;
+    padding: 40px 32px 44px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 295px;
+    min-height: 153px;
+    padding: 47px 52px 56px 53px;
+  }
 }
+
 
 .advantages__card {
   text-align: center;
 
   .advantages-card__title {
     @include font-bold(18px);
-    padding-bottom: 40px;
+    padding-bottom: 49px;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+      max-width: 130px;
+      margin: 0;
+
+    }
   }
 
   .advantages-card__description {
     @extend %font-regular;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+
+}
+
+.advantages__card--second {
+  flex-direction: row-reverse;
 }
 
 .advantages__recommend {
   background-color: $color-white;
-  padding: 23px 18px 52px 65px;
+  padding: 31px 18px 52px 62px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 // other reason
 .advantages-card--light {
   background-color: $background-gray;
-  padding: 26px 18px 26px 18px;
+  padding: 26px 18px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 41px 40px 41px 33px;
+  }
 }
 
 .advantages__card-list {
   list-style-type: none;
   margin: 0;
 
+  .advantages-card-item {
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+      max-width: 130px;
+      min-height: 174px;
+      align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: column;
+      max-width: 315px;
+      min-height: 151px;
+    }
+  }
+
   .advantages-card-item:not(:last-child) {
     padding-bottom: 49px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   .advantages-card__description--light {
     color: $color-gray;
   }
+
+
 }

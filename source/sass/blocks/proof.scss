@@ -2,6 +2,14 @@
 .catalog-container__proof {
   padding: 17px 20px 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 58px 161px 40px 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 377px 84px 377px;
+  }
+
   .more__title {
     font-weight: 700;
     font-size: 18px;
@@ -16,8 +24,18 @@
     line-height: 21px;
     text-transform: uppercase;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 66px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 66px;
+    }
   }
 
   .more__video {
   }
 }
+
+

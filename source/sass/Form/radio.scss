@@ -6,12 +6,30 @@
   flex-direction: column;
   // justify-content: space-between;
 
+  .form-container__feedback {
+    @media (min-width: $tablet-width) {
+
+    }
+
+    @media (min-width: $desktop-width) {
+
+    }
+  }
+
   .feedback__item {
     padding-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
 
     .control {
       position: relative;
       padding: 10px 0 10px 62px;
+
+      @media (min-width: $tablet-width) {
+        padding: 0;
+      }
 
       .control__input:checked + .control__icon::before {
         position: absolute;
@@ -65,5 +83,14 @@
         margin: 0;
       }
     }
+  }
+}
+
+.radio {
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: radio;
+    padding: 0;
   }
 }
