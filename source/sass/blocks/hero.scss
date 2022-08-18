@@ -10,13 +10,25 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url(../img/images/Main-background-desktop.jpg);
+    background-image: url(../img/images/main-backgorund-desktop.jpg);
   }
 }
 
 .hero {
-  background-image: url("../img/images/catalog-background-desktop.jpg.jpg");
+  background-image: url("../img/images/catalog-background-modile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 52px 40px 67px 40px;
+  text-align: center;
 
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/images/catalog-background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 290px;
+  }
 
+  @media (min-width: $desktop-width) {
+    min-height: 301px;
+  }
 }
