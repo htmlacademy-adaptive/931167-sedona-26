@@ -2,9 +2,38 @@
   background-color: $color-white;
   text-align: center;
   padding: 32px 19px 32px 19px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icons/triangle-top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 57px;
+    width: 100%;
+    top: -57px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $color-white;
+    height: 37px;
+    width: 100%;
+    bottom: -36px;
+    left: 0;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 55.5px 124px 47.5px 124px;
+    
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

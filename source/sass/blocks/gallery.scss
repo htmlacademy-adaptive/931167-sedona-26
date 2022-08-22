@@ -28,6 +28,10 @@
       position: relative;
     }
 
+    .gallery__image {
+      display: block;
+    }
+
     .gallery__description {
 
       @media (min-width: $tablet-width) {
@@ -55,6 +59,7 @@
         }
       }
     }
+
     .gallery__description--alternative {
       @media (min-width: $tablet-width) {
         background-color: $color-gray-very-light;

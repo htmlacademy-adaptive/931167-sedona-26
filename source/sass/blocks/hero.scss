@@ -5,12 +5,16 @@
   margin: 0;
   text-align: center;
 
+  
+
   .hero__image {
     max-width: 100%;
   }
 
   @media (min-width: $tablet-width) {
     background-image: url(../img/images/main-backgorund-desktop.jpg);
+    background-position: 50% 0;
+    background-size: cover;
   }
 }
 
