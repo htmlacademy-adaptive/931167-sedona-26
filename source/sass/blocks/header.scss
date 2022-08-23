@@ -3,23 +3,69 @@
   height: 56px;
   background-color: $color-white;
 
-  .page-header__toggle {
-    display: block;
+  .page-header__toggle{
+    position: absolute;
     border: none;
     background-color: $color-white;
     padding: 0;
-    height: 22px;
-    margin-left: auto;
-    margin-top: 17px;
-    margin-right: 20px;
+    width: 44px;
+    height: 44px;
+    top: 6px;
+    right: 4px;
     cursor: pointer;
+  }
+
+  .toggle--opened {
+    z-index: 3;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: 10.5px;
+      width: 22.9px;
+      height: 4px;
+      background-color: $color-blue;
+      box-shadow: 0 9px 0 0 $color-blue, 0 18px 0 0 $color-blue;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
 
-    .page-header__burger {
+  .toggle--closed {
+    z-index: 10;
+    background-color: $color-blue;
 
+    &::before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 28px;
+      background-color: $color-white;
+      transform: rotate(45deg);
+      top: 7px;
+      left: 20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 28px;
+      background-color: $color-white;
+      transform: rotate(-45deg);
+      top: 7px;
+      left: 20px;
     }
   }
 
@@ -34,18 +80,27 @@
     max-width: 185px;
   }
 
+
+
   .page-header__navigation {
     background-color: $color-blue;
-    display: none;
+    // display: none;
+
+
+
+
+
+    @media (max-width: $tablet-width) {
+      position: absolute;
+      width: 100%;
+      z-index: 5;
+    }
 
     @media (min-width: $tablet-width) {
       display: block;
       background-color: $color-white;
       color: black;
       // flex-direction: column;
-    }
-
-    .navigation {
     }
 
     .navigation__list {
@@ -63,6 +118,7 @@
 
       .navigation__item {
         padding-top: 18px;
+        padding-bottom: 18px;
         text-align: center;
 
         @media (min-width: $tablet-width) {
@@ -92,4 +148,12 @@
       }
     }
   }
+}
+
+.navigation--opened {
+      display: block;
+}
+
+.navigation--closed {
+  display: none;
 }

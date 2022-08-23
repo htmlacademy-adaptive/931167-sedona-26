@@ -9,14 +9,13 @@
 
 <!-- Index header -->
   <header class="page-header">
-    <button class="page-header__toggle toggle" type="button">
-      <img class="page-header__burger" src="./img/icons/icon-menu.png" width="22.9" height="22" alt="Открытие меню">
+    <button class="page-header__toggle toggle--opened" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="./img/images/logo.jpg" width="185" height="96" alt="Логотип города Седона">
     </a>
-    <nav class="page-header__navigation navi gation">
+    <nav class="page-header__navigation navigation--closed">
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current">
           <a class="navigation__link" href="index.html">Главная</a>
@@ -52,7 +51,7 @@
 <!-- first reason -->
       <div class="advantages__card advantages-card--main">
         <div class="advantages-card-container">
-          <h3 class="advantages-card__title">Настоящий городок</h3>
+          <h3 class="advantages-card__title counter">Настоящий городок</h3>
           <p class="advantages-card__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <img class="advantages-card__image" src="./img/images/advantages-mobile-photo-1.jpg" width="320" height="260" alt="Фотография городка">
@@ -80,7 +79,7 @@
 <!-- second reason -->
       <div class="advantages__card advantages__card--second">
         <div class="advantages-card-container">
-          <h3 class="advantages-card__title">Там есть мост дьявола</h3>
+          <h3 class="advantages-card__title counter">Там есть мост дьявола</h3>
           <p class="advantages-card__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
         <img class="advantages-card__image" src="./img/images/index-mobile-photo-2.jpg" width="320" height="260" alt="Фотография каньона">
@@ -90,15 +89,15 @@
 <!-- other reason -->
       <ul class="advantages__card-list advantages-card--light">
         <li class="advantages__card advantages-card-item">
-          <h3 class="advantages-card__title">Небольшая площадь</h3>
+          <h3 class="advantages-card__title counter counter--dark">Небольшая площадь</h3>
           <p class="advantages-card__description advantages-card__description--light">Все интересные места находятся очень близко</p>
         </li>
         <li class="advantages__card advantages-card-item">
-          <h3 class="advantages-card__title">Красивая дорога</h3>
+          <h3 class="advantages-card__title counter counter--dark">Красивая дорога</h3>
           <p class="advantages-card__description advantages-card__description--light">Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
         <li class="advantages__card advantages-card-item">
-          <h3 class="advantages-card__title">Мало туристов</h3>
+          <h3 class="advantages-card__title counter counter--dark">Мало туристов</h3>
           <p class="advantages-card__description advantages-card__description--light">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
@@ -165,5 +164,6 @@
       </a>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
   </body>
 </html>
