@@ -9,6 +9,7 @@
 @import "./blocks/hero.scss";
 @import "./blocks/preview.scss";
 @import "./blocks/advantages.scss";
+@import "./blocks/counter.scss";
 @import "./blocks/recommend.scss";
 @import "./blocks/offer.scss";
 @import "./blocks/footer.scss";
@@ -25,6 +26,7 @@
 @import "./form/checkbox.scss";
 @import "./form/textarea.scss";
 @import "./blocks/button.scss";
+@import "./form/formButton.scss";
 
 
 
@@ -32,15 +34,18 @@
 
 .page {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  counter-reset: number;
+  height: 100%;
+
 }
 
 body {
-  background-color: peachpuff;
+  background-color: red;
   max-width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  // justify-content: start;
+  min-height: 100%;
 
   @media (min-width: $mobile-width-only) {
     max-width: $tablet-width;
@@ -48,6 +53,30 @@ body {
 
   @media (min-width: $tablet-width) {
     max-width: $desktop-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $color-curnains;
+
+    &::after {
+      position: absolute;
+      content: "";
+      border-right: 15px solid #000101;
+      border-image: linear-gradient(to right, rgba(0, 1, 1, 0.2), $color-curnains)0 100%;
+      right: 25px;
+      height: 100%;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      border-right: 15px solid #000101;
+      border-image: linear-gradient(to left, rgba(0, 1, 1, 0.2), $color-curnains)0 100%;
+      left: 25px;
+      height: 100%;
+    }
   }
 }
 

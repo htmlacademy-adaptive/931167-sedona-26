@@ -1,0 +1,18 @@
+.counter {
+  &::before {
+    counter-increment: number;
+    content: "- " "№"counter(number) " -";
+    @extend %font-regular;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.counter--dark {
+  color: $color-black;
+}

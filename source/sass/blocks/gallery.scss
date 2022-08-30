@@ -6,29 +6,75 @@
   margin: 0;
   background-color: $color-white;
 
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 
   .gallery__item:first-child {
     width: 100%;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      border-top: 1px solid $catalog-card-line;
+      right: -20px;
+      left: -30px;
+      top: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+
+      &::before {
+        display: none;
+      }
+    }
   }
 
   .gallery__item {
     padding-top: 24px;
     padding-bottom: 25px;
+    position: relative;
 
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      border-top: 1px solid $catalog-card-line;
+      right: -20px;
+      left: -30px;
+      bottom: 0;
+    }
 
     @media (min-width: $tablet-width) {
       padding: 0;
+      flex-grow: 1;
+
+      &::after {
+        display: none;
+      }
     }
 
     @media (min-width: $desktop-width) {
       position: relative;
+      flex-grow: 1;
+    }
+
+    .gallery__image {
+      display: block;
     }
 
     .gallery__description {
+      margin-top: 15px;
 
       @media (min-width: $tablet-width) {
         display: flex;
@@ -36,6 +82,7 @@
         align-items: center;
         padding: 22px 20px 15px 20px;
         background-color: $fordFieldsColor;
+        margin-top: 0;
       }
 
       @media (min-width: $desktop-width) {
@@ -45,6 +92,7 @@
         right: 0;
         background-color: $color-black-opacity;
         color: white;
+        margin-top: 0;
       }
 
       .gallery__container {
@@ -55,12 +103,13 @@
         }
       }
     }
+
     .gallery__description--alternative {
       @media (min-width: $tablet-width) {
         background-color: $color-gray-very-light;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desktop-width) {
         background-color: $color-black-opacity;
       }
     }
@@ -79,4 +128,29 @@
         margin: 0;
       }
     }
+
+    .gallery__like {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      width: 23px;
+      height: 21px;
+
+      .gallery__like__icon path {
+          opacity: 0.3;
+
+          @media (min-width: $desktop-width) {
+            fill: $color-white;
+            opacity: 1;
+          }
+      }
+    }
+  }
+
+  .gallery__likes {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
   }

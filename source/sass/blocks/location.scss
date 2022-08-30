@@ -1,3 +1,10 @@
 .location {
   display: flex;
 }
+
+
+.location__image {
+  border: none;
+  display: block;
+  min-width: 100%;
+}

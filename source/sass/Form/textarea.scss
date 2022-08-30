@@ -1,8 +1,16 @@
 .textarea {
-  padding-bottom: 56px;
+  margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
     grid-area: textarea;
+    padding: 0;
+    min-width: 100%;
+    margin-top: 42px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 768px;
   }
 
   .feedback__textarea {
@@ -15,5 +23,27 @@
     resize: none;
     padding: 16px;
     background-color: $fordFieldsColor;
+    
+    &::placeholder {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 160px;
+      min-width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 100%;
+    }
   }
+}
+
+.necessarily {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 0.6;
 }

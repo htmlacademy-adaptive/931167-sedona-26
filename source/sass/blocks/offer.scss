@@ -9,6 +9,9 @@
 
   @media (min-width: $desktop-width) {
     min-width: 458px;
+    padding: 61px 155px 58px 155px;
+  }
+  @media (min-width: $desktop-width-full) {
     padding: 61px 371px 66px 371px;
   }
 }

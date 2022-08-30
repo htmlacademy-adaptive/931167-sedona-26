@@ -5,3 +5,11 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+@mixin header-font($font-weight) {
+  font-weight: $font-weight;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}

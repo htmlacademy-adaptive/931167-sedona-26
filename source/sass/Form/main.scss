@@ -5,18 +5,33 @@
 
 .form-container__feedback {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "user contacts"
-    "radio radio"
-    "checkbox checkbox"
-    "textarea textarea"
-    "button button";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr 58px;
+    // row-gap: 48px;
+    // grid-template-areas:
+    // "user contacts"
+    // "radio radio"
+    // "checkbox checkbox"
+    // "textarea textarea"
+    // "formButton formButton";
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 
+}
+
+.form-container__feedback:last-child {
+  margin-top: -10px;
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
   }
 }
