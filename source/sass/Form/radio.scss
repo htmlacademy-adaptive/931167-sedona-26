@@ -6,6 +6,20 @@
   flex-direction: column;
   // justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    // max-width: 854px;
+  }
+
+
+
   .form-container__feedback {
     @media (min-width: $tablet-width) {
 
@@ -16,16 +30,32 @@
     }
   }
 
+  .feedback__item--radio {
+    @media (min-width: $tablet-width) {
+      min-width: 280px;
+    }
+  }
+
+  .feedback__item--checkbox {
+    @media (min-width: $tablet-width) {
+      min-width: 224px;
+    }
+  }
+
+
   .feedback__item {
-    padding-bottom: 36px;
+    margin-bottom: 16px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
+      margin: 0;
     }
 
     .control {
       position: relative;
-      padding: 10px 0 10px 62px;
+      display: flex;
+      align-items: center;
+
 
       @media (min-width: $tablet-width) {
         padding: 0;
@@ -37,36 +67,47 @@
         left: 15.5px;
         width: 15px;
         height: 15px;
-        background-color: #2d3440;
+        background-color: $control-mark;
         border-radius: 50%;
         content: "";
       }
 
       .control__icon {
-        position: absolute;
         top: -2px;
         left: 0px;
         width: 46px;
         height: 46px;
         border: none;
-        background-color: #F2F2F2;
+        background-color: $control-usually;
         border-radius: 50%;
+
+        &::before {
+          background-color: red;
+        }
+
+
+        &:hover {
+          background-color: $control-hover;
+        }
+
+        &:active {
+          background-color: $control-active;
+        }
       }
 
       .checkbox__input:checked + .checkbox__icon::before {
         position: absolute;
-        top: 15.5px;
-        left: 15.5px;
-        width: 15px;
-        height: 15px;
-        background-color: #2d3440;
-        border-radius: 50%;
+        top: 15px;
+        left: 12px;
+        width: 22px;
+        height: 16px;
+
+        background-image: url("../img/icons/tick.svg");
         content: "";
       }
 
 
       .checkbox__icon {
-        position: absolute;
         top: -2px;
         left: 0px;
         width: 46px;
@@ -74,6 +115,14 @@
         border: none;
         background-color: #F2F2F2;
         border-radius: 4%;
+
+        &:hover {
+          background-color: $control-hover;
+        }
+
+        &:active {
+          background-color: $control-active;
+        }
       }
 
       .control__name {
@@ -81,10 +130,21 @@
         font-size: 18px;
         line-height: 26px;
         margin: 0;
+        margin-left: 16px;
       }
     }
   }
 }
+
+.feedback__radio {
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 28px;
+  }
+}
+
 
 .radio {
   padding-bottom: 13px;
@@ -92,5 +152,9 @@
   @media (min-width: $tablet-width) {
     grid-area: radio;
     padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 63px;
+    min-width: 100%;
   }
 }

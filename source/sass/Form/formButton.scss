@@ -1,0 +1,32 @@
+
+.feedback__container {
+  grid-area: formButton;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100%;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 768px;
+  }
+}
+
+.feedback__button {
+  padding: 18.5px 33px 13.5px 33px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+  }
+}
+
+.necessarily {
+  text-align: end;
+}

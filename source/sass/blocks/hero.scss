@@ -5,12 +5,6 @@
   margin: 0;
   text-align: center;
 
-  
-
-  .hero__image {
-    max-width: 100%;
-  }
-
   @media (min-width: $tablet-width) {
     background-image: url(../img/images/main-backgorund-desktop.jpg);
     background-position: 50% 0;
@@ -18,21 +12,41 @@
   }
 }
 
+.hero__image {
+  max-width: 100%;
+  width: 229px;
+  min-height: 39px;
+
+  // margin-top: ;
+
+  @media (min-width: $tablet-width) {
+    min-width: 495.9px;
+    min-height: 77.6px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
 .hero {
   background-image: url("../img/images/catalog-background-modile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 52px 40px 67px 40px;
+  min-height: 106px;
+  padding-top: 52px;
+  // padding: 52px 40px 67px 40px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     background-image: url(../img/images/catalog-background-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 290px;
+    min-height: 195px;
+    padding-top: 95px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 301px;
+    min-height: 200px;
+    padding-top: 101px;
   }
 }

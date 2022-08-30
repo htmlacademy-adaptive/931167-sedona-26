@@ -1,9 +1,9 @@
 .page-header {
   position: relative;
-  height: 56px;
+  min-height: 56px;
   background-color: $color-white;
 
-  .page-header__toggle{
+  .page-header__toggle {
     position: absolute;
     border: none;
     background-color: $color-white;
@@ -30,7 +30,7 @@
     }
 
     &:hover {
-        opacity: 0.6;
+      opacity: 0.6;
     }
 
     &:active {
@@ -67,6 +67,14 @@
       top: 7px;
       left: 20px;
     }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__logo {
@@ -80,15 +88,9 @@
     max-width: 185px;
   }
 
-
-
   .page-header__navigation {
     background-color: $color-blue;
     // display: none;
-
-
-
-
 
     @media (max-width: $tablet-width) {
       position: absolute;
@@ -117,28 +119,92 @@
       }
 
       .navigation__item {
-        padding-top: 18px;
-        padding-bottom: 18px;
+        padding-top: 17px;
+        padding-bottom: 12px;
         text-align: center;
+        position: relative;
+
+        &:not(:first-child)::before {
+          content: "";
+          position: absolute;
+          border-bottom: 1px solid $color-white;
+          opacity: 0.2;
+          left: 0;
+          right: 0;
+          top: 0;
+        }
+
+        &:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          border-bottom: 1px solid $color-black;
+          opacity: 0.2;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        &:last-child::after {
+          content: "";
+          position: absolute;
+          height: 7px;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        &:active {
+          opacity: 0.3;
+        }
 
         @media (min-width: $tablet-width) {
           min-width: 153px;
+
+          &::after, &::before {
+            display: none;
+          }
+
+
         }
 
         @media (min-width: $desktop-width) {
           min-width: 240px;
         }
 
-        .navigation__item--current {
-        }
+
 
         .navigation__link {
-          @include font-bold(18px);
+          @include header-font(700);
           text-decoration: none;
           color: $color-white;
 
+
+
+          @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+            @include font-bold(18px);
+
+
+          }
+
           @media (min-width: $tablet-width) {
             color: $color-black;
+
+            &:hover {
+              color: $color-blue;
+            }
+
+            &:active {
+              color: $color-black;
+              opacity: 0.3;
+            }
+          }
+        }
+
+        .navigation__link--current {
+
+          @media (min-width: $tablet-width) {
+            color: $active-menu;
           }
         }
       }
@@ -150,10 +216,15 @@
   }
 }
 
+
+
 .navigation--opened {
-      display: block;
+  display: block;
 }
 
 .navigation--closed {
   display: none;
 }
+
+
+

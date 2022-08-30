@@ -4,23 +4,22 @@
   @include font-bold(21px);
   color: $color-white;
 
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $button-disabled;
+    color: $color-white;
+  }
+
   .button__text {
     @include font-bold(21px);
     color: $color-white;
   }
-}
-
-.feedback__container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.feedback__button {
-  padding: 18.5px 33px 13.5px 33px;
-}
-
-.necessarily {
-  text-align: end;
 }

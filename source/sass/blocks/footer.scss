@@ -99,6 +99,15 @@
   .social__icon {
     margin-left: 13px;
     height: 35px;
+    fill:aqua;
+
+    &:hover {
+      fill-opacity: ".3";
+    }
   }
 }
 
+.page-footer--form {
+  padding-top: 52.5px;
+  padding-bottom: 24px;
+}
