@@ -82,6 +82,11 @@
 
         .social__icon {
           position: absolute;
+          color: $color-white;
+
+          &:hover {
+            color: red;
+          }
         }
       }
     }
@@ -96,13 +101,12 @@
     @extend %font-regular;
   }
 
-  .social__icon {
+  .copyright__icon {
     margin-left: 13px;
     height: 35px;
-    fill:aqua;
 
-    &:hover {
-      fill-opacity: ".3";
+    &:hover path {
+      opacity: 0.3;
     }
   }
 }
