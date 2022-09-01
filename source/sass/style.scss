@@ -41,14 +41,16 @@
 
 body {
   background-color: red;
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  // grid-template-rows: 56px 1fr 233px;
   min-height: 100%;
 
   @media (min-width: $mobile-width-only) {
     max-width: $tablet-width;
+    // grid-template-rows: 56px 1fr 120px;
   }
 
   @media (min-width: $tablet-width) {
@@ -78,6 +80,10 @@ body {
       height: 100%;
     }
   }
+}
+
+main {
+  flex-grow: 2;
 }
 
 .visually-hidden {

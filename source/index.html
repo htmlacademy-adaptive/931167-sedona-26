@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - главная страница</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/icon180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -37,7 +42,15 @@
   <main class="page-container">
     <section class="page-container__hero">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <img class="hero__image" src="./img/images/text-index.svg" alt="Главная надпись на английском">
+
+      <!-- ЗАМЕНИТЬ НА SVG -->
+      <!-- <img class="hero__image" src="./img/images/text-index.svg" alt="Главная надпись на английском"> -->
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/images/index-back-desktop.jpg 1x, img/images/index-back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/images/index-back-tablet.jpg 1x, img/images/index-back-tablet@2x.jpg 2x">
+        <img class="hero__backgorund" src="img/images/index-back-mobile.jpg" srcset="img/images/index-back-mobile@2x.jpg 2x" width="320" height="389" alt="Фотография нашего городка">
+      </picture>
+
     </section>
 
 <!-- advantages -->
@@ -49,12 +62,17 @@
       </div>
 
 <!-- first reason -->
-      <div class="advantages__card advantages-card--main">
+      <div class="advantages__card advantages__card--main">
         <div class="advantages-card-container">
           <h3 class="advantages-card__title counter">Настоящий городок</h3>
           <p class="advantages-card__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="advantages-card__image" src="./img/images/advantages-mobile-photo-1.jpg" width="320" height="260" alt="Фотография городка">
+         <!-- <img class="advantages-card__image" src="./img/images/advantages-mobile-photo-1.jpg" width="320" height="260" alt="Фотография городка"> -->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/images/index-photo-1-desktop.jpg 1x, img/images/index-photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/images/index-photo-1-tablet.jpg 1x, img/images/index-photo-1-tablet@2x.jpg 2x">
+          <img class="advantages-card__image" src="img/images/index-photo-1-mobile.jpg" srcset="img/images/index-photo-1-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография нашего городка">
+        </picture>
       </div>
 
 
@@ -78,11 +96,15 @@
 
 <!-- second reason -->
       <div class="advantages__card advantages__card--second">
-        <div class="advantages-card-container">
+        <div class="advantages-card-container advantages-card-container--second">
           <h3 class="advantages-card__title counter">Там есть мост дьявола</h3>
           <p class="advantages-card__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantages-card__image" src="./img/images/index-mobile-photo-2.jpg" width="320" height="260" alt="Фотография каньона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/images/index-photo-2-desktop.jpg 1x, img/images/index-photo-2-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/images/index-photo-2-tablet.jpg 1x, img/images/index-photo-2-tablet@2x.jpg 2x">
+          <img class="advantages-card__image" src="img/images/index-photo-2-mobile.jpg" srcset="img/images/index-photo-2-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография нашего городка">
+        </picture>
       </div>
 
 
@@ -139,7 +161,7 @@
         <li class="social__item">
           <a class="social__link social__link--telegram" href="#">
             <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21.4391 1.62225L18.2704 16.566C18.0311 17.6205 17.4079 17.883 16.5221 17.3865L11.6936 13.8285L9.36415 16.0695C9.10615 16.3275 8.8909 16.5428 8.39365 16.5428L8.7409 11.6258L17.6891 3.54C18.0784 3.1935 17.6044 3.00075 17.0846 3.348L6.02215 10.314L1.25965 8.823C0.223899 8.49975 0.205149 7.78725 1.47565 7.29L20.1034 0.113251C20.9659 -0.209999 21.7204 0.305251 21.4391 1.623V1.62225Z" fill="#FFFFFF"/>
+              <path d="M21.4391 1.62225L18.2704 16.566C18.0311 17.6205 17.4079 17.883 16.5221 17.3865L11.6936 13.8285L9.36415 16.0695C9.10615 16.3275 8.8909 16.5428 8.39365 16.5428L8.7409 11.6258L17.6891 3.54C18.0784 3.1935 17.6044 3.00075 17.0846 3.348L6.02215 10.314L1.25965 8.823C0.223899 8.49975 0.205149 7.78725 1.47565 7.29L20.1034 0.113251C20.9659 -0.209999 21.7204 0.305251 21.4391 1.623V1.62225Z" fill="currentColor"/>
               </svg>
               <span class="visually-hidden">Телеграмм</span>
           </a>
@@ -156,7 +178,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <span class="copyright__title">Разработано</span>
-      <a class="social__icon" href="#">
+      <a class="copyright__icon" href="#">
         <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
           </svg>
