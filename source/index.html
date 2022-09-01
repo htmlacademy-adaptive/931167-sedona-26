@@ -42,7 +42,15 @@
   <main class="page-container">
     <section class="page-container__hero">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <img class="hero__image" src="./img/images/text-index.svg" alt="Главная надпись на английском">
+
+      <!-- ЗАМЕНИТЬ НА SVG -->
+      <!-- <img class="hero__image" src="./img/images/text-index.svg" alt="Главная надпись на английском"> -->
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/images/index-back-desktop.jpg 1x, img/images/index-back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/images/index-back-tablet.jpg 1x, img/images/index-back-tablet@2x.jpg 2x">
+        <img class="hero__backgorund" src="img/images/index-back-mobile.jpg" srcset="img/images/index-back-mobile@2x.jpg 2x" width="320" height="389" alt="Фотография нашего городка">
+      </picture>
+
     </section>
 
 <!-- advantages -->
@@ -54,12 +62,17 @@
       </div>
 
 <!-- first reason -->
-      <div class="advantages__card advantages-card--main">
+      <div class="advantages__card advantages__card--main">
         <div class="advantages-card-container">
           <h3 class="advantages-card__title counter">Настоящий городок</h3>
           <p class="advantages-card__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="advantages-card__image" src="./img/images/advantages-mobile-photo-1.jpg" width="320" height="260" alt="Фотография городка">
+         <!-- <img class="advantages-card__image" src="./img/images/advantages-mobile-photo-1.jpg" width="320" height="260" alt="Фотография городка"> -->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/images/index-photo-1-desktop.jpg 1x, img/images/index-photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/images/index-photo-1-tablet.jpg 1x, img/images/index-photo-1-tablet@2x.jpg 2x">
+          <img class="advantages-card__image" src="img/images/index-photo-1-mobile.jpg" srcset="img/images/index-photo-1-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография нашего городка">
+        </picture>
       </div>
 
 
@@ -83,11 +96,15 @@
 
 <!-- second reason -->
       <div class="advantages__card advantages__card--second">
-        <div class="advantages-card-container">
+        <div class="advantages-card-container advantages-card-container--second">
           <h3 class="advantages-card__title counter">Там есть мост дьявола</h3>
           <p class="advantages-card__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantages-card__image" src="./img/images/index-mobile-photo-2.jpg" width="320" height="260" alt="Фотография каньона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/images/index-photo-2-desktop.jpg 1x, img/images/index-photo-2-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/images/index-photo-2-tablet.jpg 1x, img/images/index-photo-2-tablet@2x.jpg 2x">
+          <img class="advantages-card__image" src="img/images/index-photo-2-mobile.jpg" srcset="img/images/index-photo-2-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография нашего городка">
+        </picture>
       </div>
 
 

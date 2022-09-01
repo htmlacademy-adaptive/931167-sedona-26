@@ -37,7 +37,12 @@
   <main class="form-container">
     <h1 class="visually-hidden">Форма для отправки отзыва</h1>
     <section class="form-container__hero hero">
-        <img class="hero__image" src="./img/icons/SEDONA.svg" alt="Главная надпись на английском">
+        <!-- <img class="hero__image" src="./img/icons/SEDONA.svg" alt="Главная надпись на английском"> -->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/images/index-back-desktop.jpg 1x, img/images/index-back-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/images/index-back-tablet.jpg 1x, img/images/index-back-tablet@2x.jpg 2x">
+          <img class="hero__backgorund hero__backgorund--form" src="img/images/index-back-mobile.jpg" srcset="img/images/index-back-mobile@2x.jpg 2x" width="320" height="158" alt="Фотография нашего городка">
+        </picture>
     </section>
 
     <div class="page__preview page__preview--form">

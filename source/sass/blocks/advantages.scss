@@ -32,12 +32,37 @@
   }
 }
 
+.advantages-card-container--second {
+  order: 1;
+}
+
+
+
 .advantages-card__image {
   display: block;
+  object-fit: cover;
+  min-width: 100%;
+
+
+
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .advantages__card {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    // grid-template-columns: 256px 1fr;
+    // grid-template-rows: 256px;
+  }
 
   .advantages-card__title {
     @include font-bold(18px);
@@ -54,14 +79,24 @@
   .advantages-card__description {
     @extend %font-regular;
   }
+}
+
+.advantages__card--main {
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    grid-template-rows: 256px;
   }
 }
 
 .advantages__card--second {
-  flex-direction: row-reverse;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 256px;
+    grid-template-rows: 256px;
+  }
 }
 
 .advantages__recommend {

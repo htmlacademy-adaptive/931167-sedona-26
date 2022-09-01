@@ -71,6 +71,8 @@
 
     .gallery__image {
       display: block;
+      object-fit: cover;
+      min-width: 100%;
     }
 
     .gallery__description {
