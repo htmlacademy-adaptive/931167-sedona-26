@@ -1,4 +1,7 @@
 .page-container__hero {
+  position: relative;
+
+  // position: relative;
   // background-image: url(../img/images/Main-background-modile.jpg);
   // background-position: top;
   // padding: 90px 19px 85px 19px;
@@ -12,11 +15,40 @@
   }
 }
 
+.hero-container__logo {
+  position: absolute;
+  width: 100%;
+  min-height: 214px;
+  text-align: center;
+
+
+  @media (min-width: $tablet-width) {
+    height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.hero__logo { 
+  // width: 100%;
+  // height: 100%;
+
+  @media (min-width: $tablet-width) {
+    // min-width: 461px;
+    // min-height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+
 .hero__backgorund {
   display: block;
   width: 100%;
   height: 100%;
-  // min-height: 320px;
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
@@ -27,7 +59,13 @@
   }
 }
 
+.hero__backgorund--index {
+  min-height: 389px;
+}
+
 .hero__backgorund--catalog, .hero__backgorund--form {
+  min-height: 159px;
+
   @media (min-width: $tablet-width) {
     max-height:  290px;
   }
