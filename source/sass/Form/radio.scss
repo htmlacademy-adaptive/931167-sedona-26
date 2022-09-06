@@ -72,6 +72,10 @@
         content: "";
       }
 
+      .control__input:active + .control__icon::before {
+          opacity: 0.3;
+      }
+
       .control__icon {
         top: -2px;
         left: 0px;
@@ -106,6 +110,9 @@
         content: "";
       }
 
+      .control__input:active + .checkbox__icon::before {
+        opacity: 0.3;
+      }
 
       .checkbox__icon {
         top: -2px;

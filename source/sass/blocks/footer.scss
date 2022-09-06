@@ -62,8 +62,17 @@
       height: 48px;
       padding: 0;
 
+      &:hover {
+        background-color: $button-hover;
+      }
+
+      &:active {
+        background-color: $button-down;
+      }
+
       .social__link {
         position: relative;
+        color: $color-black;
 
         &--vkontakte {
           top: 17px;
@@ -84,8 +93,8 @@
           position: absolute;
           color: $color-white;
 
-          &:hover {
-            color: red;
+          &:active {
+            opacity: 0.3;
           }
         }
       }
@@ -96,18 +105,31 @@
 .page-footer__copyright {
   display: flex;
   align-items: center;
+  flex-direction: row;
+
 
   .copyright__title {
     @extend %font-regular;
   }
 
-  .copyright__icon {
-    margin-left: 13px;
+  .copyright__link {
+    text-decoration: none;
+    @extend %font-regular;
+    color: $color-black;
     height: 35px;
 
-    &:hover path {
-      opacity: 0.3;
+    &:hover {
+      color: $color-blue;
     }
+
+    &:active {
+      color: $copyright__icon-active;
+    }
+  }
+
+  .copyright__icon {
+    vertical-align: middle;
+    margin-left: 13px;
   }
 }
 
