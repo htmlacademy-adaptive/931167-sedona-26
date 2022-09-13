@@ -19,9 +19,6 @@
   }
 }
 
-.page-footer__hashtag {
-}
-
 .hashtag {
   text-align: center;
   padding-bottom: 33px;
@@ -91,7 +88,7 @@
 
         .social__icon {
           position: absolute;
-          color: $color-white;
+          fill: $color-white;
 
           &:active {
             opacity: 0.3;
@@ -112,7 +109,7 @@
     @extend %font-regular;
   }
 
-  .copyright__link {
+  .copyright__link, .copyright__icon{
     text-decoration: none;
     @extend %font-regular;
     color: $color-black;
@@ -120,10 +117,12 @@
 
     &:hover {
       color: $color-blue;
+      fill: $color-blue;
     }
 
     &:active {
       color: $copyright__icon-active;
+      fill:  $copyright__icon-active;
     }
   }
 

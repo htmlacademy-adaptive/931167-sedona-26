@@ -36,21 +36,23 @@
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   counter-reset: number;
   height: 100%;
+  // background-color: ;
+  @media (min-width: $desktop-width) {
+    background-color: $color-curnains;
 
+  }
 }
 
 body {
-  background-color: red;
+  background-color: $color-white;
   min-width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  // grid-template-rows: 56px 1fr 233px;
   min-height: 100%;
 
   @media (min-width: $mobile-width-only) {
     max-width: $tablet-width;
-    // grid-template-rows: 56px 1fr 120px;
   }
 
   @media (min-width: $tablet-width) {
@@ -59,16 +61,13 @@ body {
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: $color-curnains;
 
     &::after {
       position: absolute;
       content: "";
       border-right: 15px solid #000101;
       border-image: linear-gradient(to right, rgba(0, 1, 1, 0.2), $color-curnains)0 100%;
-      right: 25px;
+      right: -15px;
       height: 100%;
     }
     &::before {
@@ -76,7 +75,7 @@ body {
       content: "";
       border-right: 15px solid #000101;
       border-image: linear-gradient(to left, rgba(0, 1, 1, 0.2), $color-curnains)0 100%;
-      left: 25px;
+      left: -15px;
       height: 100%;
     }
   }

@@ -1,13 +1,17 @@
 
 .catalog-container__proof {
-  padding: 17px 20px 0;
+  margin-top: 43px;
+
+
 
   @media (min-width: $tablet-width) {
-    padding: 58px 161px 40px 161px;
+
+    margin-top: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 377px 84px 377px;
+    // padding: 62px 377px 84px 377px;
+    margin-top: 62px;
   }
 
   .more__title {
@@ -24,17 +28,34 @@
     line-height: 21px;
     text-transform: uppercase;
     margin: 0;
+    padding-left: 28px;
+    padding-right: 26px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 66px;
+      padding-left: 161px;
+      padding-right: 162px;
     }
 
     @media (min-width: $desktop-width) {
       padding-bottom: 66px;
+      padding-left: 347px;
+      padding-right: 348px;
     }
   }
 
-  .more__video {
+  .video__image {
+    max-width: 280px;
+    max-height: 177px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 648px;
+      min-height: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 800px;
+    }
   }
 }
 
