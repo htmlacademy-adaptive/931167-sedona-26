@@ -1,18 +1,16 @@
 let headerToggle = document.querySelector('.page-header__toggle');
 let navToggle = document.querySelector('.page-header__navigation');
+let navLogo = document.querySelector('.page-header__logo');
+
+headerToggle.classList.remove('toggle--no-js');
+navToggle.classList.remove('navigation--no-js');
+navLogo.classList.remove('logo--no-js');
 
 
 headerToggle.addEventListener('click', function () {
-  if (headerToggle.classList.contains('toggle--opened')) {
-    headerToggle.classList.remove('toggle--opened');
-    headerToggle.classList.add('toggle--closed');
-    navToggle.classList.remove('navigation--closed');
-    navToggle.classList.add('navigation--opened');
-  } else {
-    headerToggle.classList.remove('toggle--closed');
-    headerToggle.classList.add('toggle--opened');
-    navToggle.classList.remove('navigation--opened');
-    navToggle.classList.add('navigation--closed');
-  }
+  headerToggle.classList.toggle('toggle--opened');
+  headerToggle.classList.toggle('toggle--closed');
+  navToggle.classList.toggle('navigation--closed');
+  navLogo.classList.toggle('logo--no-js');
 });
 

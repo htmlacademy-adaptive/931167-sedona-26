@@ -90,17 +90,23 @@
     right: 0;
     text-align: center;
     max-width: 185px;
-    z-index: 5;
+    z-index: 6;
   }
+
+  .logo--no-js {
+    display: none;
+  }
+
+
 
   .page-header__navigation {
     background-color: $color-blue;
-    // display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
 
-    @media (max-width: $tablet-width) {
-      position: absolute;
-      width: 100%;
-      z-index: 5;
+    @media (min-width: $tablet-width) {
+
     }
 
     @media (min-width: $tablet-width) {
@@ -219,6 +225,11 @@
       }
     }
   }
+
+  .navigation--no-js {
+    display: block;
+    position: relative;
+  }
 }
 
 
@@ -228,6 +239,10 @@
 }
 
 .navigation--closed {
+  display: none;
+}
+
+.toggle--no-js {
   display: none;
 }
 

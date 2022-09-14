@@ -9,16 +9,16 @@
 
 <!-- Catalog header -->
   <header class="page-header">
-    <button class="page-header__toggle toggle--opened" type="button">
+    <button class="page-header__toggle toggle--opened toggle--no-js" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo logo--no-js" href="index.html">
       <img class="page-header__logo-image" src="img/icons/header-logo.png" width="185" height="96" alt="Логотип города Седона">
     </a>
-    <nav class="page-header__navigation navigation--closed">
+    <nav class="page-header__navigation navigation--closed navigation--no-js">
       <ul class="navigation__list">
-        <li class="navigation__item navigation__item--current">
-          <a class="navigation__link" href="index.html">Главная</a>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">Фото и видео</a>
@@ -217,6 +217,6 @@
       </a>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
