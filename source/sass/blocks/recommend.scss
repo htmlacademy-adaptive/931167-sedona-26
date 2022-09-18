@@ -7,12 +7,12 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
-      padding: 157px 31px 59px 36px;
+      padding: 159px 31px 59px 32px;
       text-align: center;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 157px 78px 79px 58px;
+      padding: 157px 78px 78px 60px;
     }
 
 
@@ -45,6 +45,11 @@
 }
 
 .recommend__item--house {
+
+  @media (min-width: $tablet-width) {
+
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -52,25 +57,72 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 40px;
-    width: 40px;
-    top: -5px;
+    height: 38px;
+    width: 39px;
+    top: -8px;
     left: -47px;
 
     @media (min-width: $tablet-width) {
-      height: 75px;
-      width: 72px;
-      top: -90px;
-      left: 61px;
+      height: 72px;
+      width: 75px;
+      top: -99px;
+      left: 58px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 102px;
+      left: 100px;
+      height: 78px;
+      width: 76px;
+      top: -101px;
+    }
+  }
+
+  & .recommend__title {
+
+    @media (min-width: $desktop-width) {
+      padding-top: 4px;
     }
   }
 }
 
 .recommend__item--eat {
+  margin-left: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 48px;
+  }
+
+  & .recommend__title {
+    @media (min-width: $tablet-width) {
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 20px;
+      padding-top: 2px;
+      padding-bottom: 22px;
+    }
+  }
+
+  & .recommend__description {
+    @media (min-width: $tablet-width) {
+      max-width: 151px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 302px;
+      padding-left: 22px;
+    }
+  }
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -78,25 +130,30 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 40px;
-    width: 40px;
-    top: -5px;
-    left: -47px;
+    height: 35px;
+    width: 53px;
+    top: -6px;
+    left: -58px;
 
     @media (min-width: $tablet-width) {
-      height: 75px;
-      width: 68px;
-      top: -90px;
-      left: 61px;
+      height: 76px;
+      width: 75.9px;
+      top: -100px;
+      left: 36px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 102px;
+      left: 110px;
+      height: 76px;
+      width: 75.9px;
+      top: -97px;
     }
   }
 }
 
 .recommend__item--souvenirs {
+  margin-left: -3px;
+
   &::before {
     content: "";
     position: absolute;
@@ -104,20 +161,45 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 40px;
-    width: 40px;
+    height: 39px;
+    width: 32px;
     top: -9px;
-    left: -44px;
+    left: -40px;
 
     @media (min-width: $tablet-width) {
-      height: 64px;
-      width: 75px;
-      top: -90px;
-      left: 61px;
+      height: 75px;
+      width: 104px;
+      top: -102px;
+      left: 43px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 102px;
+      top: -99px;
+      left: 55px;
+    }
+  }
+
+  & .recommend__title {
+    @media (min-width: $desktop-width) {
+      padding-right: 14px;
+      padding-top: 2px;
+    }
+  }
+
+  & .recommend__description {
+
+    @media (max-width: 1199px) {
+      & br {
+        content: "";
+        &::after {
+          content: "\00a0";
+        }
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 244px;
+      margin-right: 16px;
     }
   }
 }
@@ -125,9 +207,22 @@
 .recommend__title {
   @include font-bold(18px);
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    @include font-bold(21px);
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .recommend__description {
   @extend %font-regular;
   color: $color-gray;
+
+  .text__gap--souvenirs {
+    display: table;
+  }
 }

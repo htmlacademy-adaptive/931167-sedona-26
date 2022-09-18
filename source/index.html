@@ -23,16 +23,16 @@
     <nav class="page-header__navigation navigation--closed navigation--no-js">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+          <a class="navigation__link navigation__link--main navigation__link--current" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+          <a class="navigation__link navigation__link--catalog" href="catalog.html">Фото и видео</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Форма отзыва</a>
+          <a class="navigation__link navigation__link--form" href="form.html">Форма отзыва</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+          <a class="navigation__link navigation__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
         </li>
       </ul>
     </nav>
@@ -75,7 +75,7 @@
 
           <source media="(min-width: 1200px)" srcset="img/images/index-photo-1-desktop.jpg 1x, img/images/index-photo-1-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/images/index-photo-1-tablet.jpg 1x, img/images/index-photo-1-tablet@2x.jpg 2x">
-          <img class="advantages-card__image" src="img/images/index-photo-1-mobile.jpg" srcset="img/images/index-photo-1-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография нашего городка">
+          <img class="advantages-card__image" src="img/images/index-photo-1-mobile.jpg" srcset="img/images/index-photo-1-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография настоящего города">
         </picture>
       </div>
 
@@ -92,7 +92,7 @@
           </li>
           <li class="recommend__item recommend__item--souvenirs">
             <h3 class="recommend__title">Сувениры</h3>
-            <p class="recommend__description">Не только китайского, но и местного производства!</p>
+            <p class="recommend__description">Не только китайского,<br>но и местного производства!</p>
           </li>
         </ul>
       </div>
@@ -100,8 +100,8 @@
 <!-- second reason -->
       <div class="advantages__card advantages__card--second">
         <div class="advantages-card-container advantages-card-container--second">
-          <h3 class="advantages-card__title counter">Там есть мост дьявола</h3>
-          <p class="advantages-card__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <h3 class="advantages-card__title advantages-card__title--second counter">Там есть мост дьявола</h3>
+          <p class="advantages-card__description advantages-card__description--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
         <picture>
           <picture>
@@ -118,17 +118,17 @@
 
 <!-- other reason -->
       <ul class="advantages__card-list advantages-card--light">
-        <li class="advantages__card advantages-card-item">
+        <li class="advantages__card advantages-card-item advantages-card-item--square">
           <h3 class="advantages-card__title counter counter--dark">Небольшая площадь</h3>
           <p class="advantages-card__description advantages-card__description--light">Все интересные места находятся очень близко</p>
         </li>
-        <li class="advantages__card advantages-card-item">
+        <li class="advantages__card advantages-card-item advantages-card-item--road">
           <h3 class="advantages-card__title counter counter--dark">Красивая дорога</h3>
-          <p class="advantages-card__description advantages-card__description--light">Ехать в седону из лас-вегаса совсем не скучно!</p>
+          <p class="advantages-card__description advantages-card__description--light"><span class="text__gap--road">Ехать в седону из<br>лас-вегаса</span> совсем<br>не скучно!</p>
         </li>
-        <li class="advantages__card advantages-card-item">
+        <li class="advantages__card advantages-card-item advantages-card-item--tourists">
           <h3 class="advantages-card__title counter counter--dark">Мало туристов</h3>
-          <p class="advantages-card__description advantages-card__description--light">Большинство едет в гранд каньон и толпится там</p>
+          <p class="advantages-card__description advantages-card__description--light advantages-card__description--last"><span class="text__gap--tourists">Большинство едет в гранд каньон и</span> толпится там</p>
         </li>
       </ul>
     </section>
@@ -136,15 +136,15 @@
 <!-- offer -->
     <section class="page-container__offer more">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <p class="more__title">Заинтерисовались?</p>
-      <p class="more__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <p class="more__title">Заинтересовались?</p>
+      <p class="more__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="more__button button" type="button">Найти гостиницу</button>
     </section>
 
 <!-- location -->
     <div class="location">
       <h2 class="visually-hidden">Карта с геолокацией</h2>
-      <iframe class="location__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556387!2d30.315220216488637!3d59.96826866666961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1661169719631!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="location__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556387!2d30.315220216488637!3d59.96826866666961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1661169719631!5m2!1sru!2sru" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </main>
 

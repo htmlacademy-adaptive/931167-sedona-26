@@ -12,7 +12,7 @@
   position: absolute;
   z-index: 1;
   margin: auto;
-  top: 0;
+  top: 5px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -21,6 +21,10 @@
   @media (min-width: $tablet-width) {
     min-width: 461px;
     min-height: 350px;
+    top: -12px;
+    right: 1px;
+    bottom: 0;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {

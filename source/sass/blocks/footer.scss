@@ -1,7 +1,7 @@
 // footer
 .page-footer {
   background-color: $color-white;
-  padding: 23px 77px  20px 77px;
+  padding: 38px 77px  20px 77px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 60px  36px 60px;
+    padding: 38px 60px 36px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,15 +22,19 @@
 .hashtag {
   text-align: center;
   padding-bottom: 33px;
+  margin-right: 2px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-top: 1px;
+  }
+
+  .hashtag__text {
+    @include font-bold(21px);
   }
 }
 
-.hashtag__text {
-  @include font-bold(21px);
-}
+
 
 
 
@@ -39,6 +43,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-left: -8px;
+    margin-top: -2px;
   }
 
   .social__list {
@@ -48,6 +54,7 @@
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    margin-left: 3px;
 
     @media (min-width: $tablet-width) {
       min-width: 156px;
@@ -128,7 +135,7 @@
 
   .copyright__icon {
     vertical-align: middle;
-    margin-left: 13px;
+    margin-left: 9px;
   }
 }
 
