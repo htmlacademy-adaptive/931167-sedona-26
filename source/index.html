@@ -14,13 +14,13 @@
 
 <!-- Index header -->
   <header class="page-header">
-    <button class="page-header__toggle toggle--opened toggle--no-js" type="button">
+    <button class="page-header__toggle toggle toggle--opened toggle--no-js" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <a class="page-header__logo logo--no-js" href="index.html">
+    <a class="page-header__logo  logo logo--no-js" href="index.html">
       <img class="page-header__logo-image" src="img/icons/header-logo.png" width="185" height="96" alt="Логотип города Седона">
     </a>
-    <nav class="page-header__navigation navigation--closed navigation--no-js">
+    <nav class="page-header__navigation navigation navigation--closed navigation--no-js">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--main navigation__link--current" href="index.html">Главная</a>
@@ -40,7 +40,7 @@
 
 <!-- Index main -->
   <main class="page-container">
-    <section class="page-container__hero">
+    <section class="page-container__hero hero">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <img class="hero__logo" src="./img/icons/text-index.svg" width="282" height="214" alt="Главная надпись на английском">
       <picture>
@@ -63,13 +63,13 @@
       </div>
 
 <!-- first reason -->
-      <div class="advantages__card advantages__card--main">
+      <div class="advantages__card advantages__card--main advantages-card">
         <div class="advantages-card-container">
           <h3 class="advantages-card__title counter">Настоящий городок</h3>
           <p class="advantages-card__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <picture>
-          <source type="image" media="(min-width: 1200px)" srcset="img/images/webp/index-photo-1-desktop.webp 1x, img/images/webp/index-photo-1-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/images/webp/index-photo-1-desktop.webp 1x, img/images/webp/index-photo-1-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/images/webp/index-photo-1-tablet.webp 1x, img/images/webp/index-photo-1-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/images/webp/index-photo-1-mobile.webp 1x, img/images/webp/index-photo-1-mobile@2x.webp 2x">
 
@@ -98,33 +98,31 @@
       </div>
 
 <!-- second reason -->
-      <div class="advantages__card advantages__card--second">
+      <div class="advantages__card advantages__card--second advantages-card">
         <div class="advantages-card-container advantages-card-container--second">
           <h3 class="advantages-card__title advantages-card__title--second counter">Там есть мост дьявола</h3>
           <p class="advantages-card__description advantages-card__description--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
         <picture>
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/images/webp/index-photo-2-desktop.webp 1x, img/images/webp/index-photo-2-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/images/webp/index-photo-2-tablet.webp 1x, img/images/webp/index-photo-2-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/images/webp/index-photo-2-mobile.webp 1x, img/images/webp/index-photo-2-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/images/webp/index-photo-2-desktop.webp 1x, img/images/webp/index-photo-2-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/images/webp/index-photo-2-tablet.webp 1x, img/images/webp/index-photo-2-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/images/webp/index-photo-2-mobile.webp 1x, img/images/webp/index-photo-2-mobile@2x.webp 2x">
 
           <source media="(min-width: 1200px)" srcset="img/images/index-photo-2-desktop.jpg 1x, img/images/index-photo-2-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/images/index-photo-2-tablet.jpg 1x, img/images/index-photo-2-tablet@2x.jpg 2x">
-          <img class="advantages-card__image" src="img/images/index-photo-2-mobile.jpg" srcset="img/images/index-photo-2-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография нашего городка">
+          <img class="advantages-card__image" src="img/images/index-photo-2-mobile.jpg" srcset="img/images/index-photo-2-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография моста дьявола">
         </picture>
       </div>
 
-
 <!-- other reason -->
-      <ul class="advantages__card-list advantages-card--light">
+      <ul class="advantages__card-list advantages-card--light advantages-card">
         <li class="advantages__card advantages-card-item advantages-card-item--square">
           <h3 class="advantages-card__title counter counter--dark">Небольшая площадь</h3>
           <p class="advantages-card__description advantages-card__description--light">Все интересные места находятся очень близко</p>
         </li>
         <li class="advantages__card advantages-card-item advantages-card-item--road">
           <h3 class="advantages-card__title counter counter--dark">Красивая дорога</h3>
-          <p class="advantages-card__description advantages-card__description--light"><span class="text__gap--road">Ехать в седону из<br>лас-вегаса</span> совсем<br>не скучно!</p>
+          <p class="advantages-card__description advantages-card__description--light"><span class="text__gaptext__gap--road">Ехать в седону из<br>лас-вегаса</span> совсем<br>не скучно!</p>
         </li>
         <li class="advantages__card advantages-card-item advantages-card-item--tourists">
           <h3 class="advantages-card__title counter counter--dark">Мало туристов</h3>
