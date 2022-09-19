@@ -20,7 +20,7 @@ input, textarea {
     border-top: 1px solid $catalog-card-line;
     right: 0;
     left: 0;
-    top: -24px;
+    top: -25px;
   }
 
   @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@ input, textarea {
       border-top: 1px solid $catalog-card-line;
       right: 100%;
       top: 50%;
-      width: 100%;
+      width: 123px;
     }
 
     &::after {
@@ -56,11 +56,22 @@ input, textarea {
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      font-size: 21px;
+      margin-left: -1px;
+      margin-top: -1px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 28px;
+      margin-bottom: 11px;
+
+      &::after {
+        width: 279px;
+      }
+
+      &::before {
+        width: 279px;
+      }
     }
   }
 
@@ -79,6 +90,8 @@ input, textarea {
 
     @media (min-width: $tablet-width) {
       width: 402px;
+      line-height: 23px;
+
       &::before {
         display: block;
       }
@@ -138,13 +151,14 @@ input, textarea {
   }
 
   .person {
-
     @media (min-width: $tablet-width) {
-      margin-right: 35px;
+      margin-right: 43px;
+      min-width: 280px;
     }
 
     @media (min-width: $desktop-width) {
       margin-right: 63px;
+      min-width: 430px;
     }
   }
 
@@ -171,7 +185,7 @@ input, textarea {
     }
 
     .person__label:not(:first-child) {
-      padding-top: 20px;
+      padding-top: 16px;
 
       @media (min-width: $tablet-width) {
         padding-top: 0;
@@ -179,6 +193,7 @@ input, textarea {
     }
 
     .person__input, .contacts__input {
+      font-family: "PT Sans", Arial, Helvetica, sans-serif;
       border: none;
       padding: 0;
       padding-left: 16px;
@@ -215,16 +230,15 @@ input, textarea {
     }
 
     .contacts__icon--phone {
-      // background-size: 20% 20%;
       padding: 20px;
       width: 18px;
       height: 18px;
     }
 
     .contacts__icon--email {
-      padding: 20px;
-      width: 18px;
-      height: 18px;
+      padding: 23px 21px 23px 21px;
+      width: 16px;
+      height: 12px;
     }
   }
 }
@@ -240,7 +254,6 @@ input, textarea {
   @media (min-width: $tablet-width) {
     grid-area: user;
     padding: 0;
-    flex-grow: 1;
 
     &::after {
       position: absolute;
@@ -248,7 +261,8 @@ input, textarea {
       border-right: 1px solid $catalog-card-line;
       left: 100%;
       bottom: -15px;
-      min-height: 353px;
+      max-height: 353px;
+      top: -1px;
     }
   }
 
@@ -276,7 +290,7 @@ input, textarea {
   @media (min-width: $tablet-width) {
     grid-area: contacts;
     padding: 0;
-    min-width: 298px;
+    width: 307px;
   }
 
   @media (min-width: $desktop-width) {
@@ -288,22 +302,21 @@ input, textarea {
 
     @media (min-width: $tablet-width) {
       padding-bottom: 0;
-      margin-left: 44px;
-
+      margin-left: 45px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 64px;
+      margin-left: 65px;
     }
   }
 
   .email {
     @media (min-width: $tablet-width) {
-      margin-left: 44px;
+      margin-left: 45px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 64px;
+      margin-left: 65px;
     }
   }
 }

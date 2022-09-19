@@ -31,14 +31,23 @@
   }
 }
 
+.hero__logo--catalog, .hero__logo--form {
+  top: -16px;
+  right: 1px;
+}
+
 .hero__logo--additional {
   @media (min-width: $tablet-width) {
     min-width: 457px;
     min-height: 77.6px;
+    top: -21px;
+    right: -3px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 79.8px;
+    min-height: 78.8px;
+    top: -20px;
+    right: 4px;
   }
 }
 

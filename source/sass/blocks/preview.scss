@@ -1,10 +1,8 @@
 .page__preview {
   background-color: $color-white;
   text-align: center;
-  // padding: 32px 19px 32px 19px;
   padding-top: 34px;
-  padding-bottom: 38px;
-  // padding-right: 50px;
+  padding-bottom: 39px;
   position: relative;
 
   &::before {
@@ -20,16 +18,13 @@
     left: 0;
 
     @media (min-width: $tablet-width) {
-      top: -56
-
-      px;
+      top: -56px;
     }
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 49px;
-    padding-bottom: 55px;
-
+    padding-bottom: 56px;
 
     &::after {
       display: none;
@@ -37,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 358px 44px 358px;
+    padding: 60px 358px 45px 358px;
   }
 
   .page__title {
@@ -53,18 +48,30 @@
       margin-right: 120px;
       padding-bottom: 29px;
     }
+
     @media (min-width: $desktop-width) {
       margin: 0;
-      margin-right: 6px;
+      margin-right: 5px;
     }
   }
 
   .page__title--form {
-      font-weight: 700;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
       font-size: 30px;
-      line-height: 26px;
-      text-transform: uppercase;
-      margin: 0;
+      padding-bottom: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -3px;
+      padding-bottom: 29px;
+    }
   }
 
   .page__text {
@@ -84,6 +91,27 @@
   }
 }
 
+.page__preview--catalog, .page__preview--form  {
+  &::before {
+    top: -57px;
+    }
+    @media (min-width: $tablet-width) {
+      &::before {
+        top: -56px;
+    }
+  }
+}
+
+.page__preview--form {
+  .page__text {
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+       line-height: 24px;
+    }
+  }
+}
+
 .page__preview--index {
   &::after {
     content: "";
@@ -98,23 +126,57 @@
 }
 
 .page__preview--catalog {
+  padding-left: 4px;
+  padding-top: 38px;
+  padding-bottom: 36px;
+
   @media (min-width: $tablet-width) {
-    padding: 63px 155px;
+    padding: 67px 160px 81px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 371px 65px 371px;
+    padding: 100px 383px 89px 385px;
+  }
+
+  .page__title {
+    padding-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      padding-bottom: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 30px;
+      padding-bottom: 31px;
+    }
+  }
+
+  .page__text {
+    padding-right: 2px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-right: 4px;
+    }
   }
 }
 
 .page__preview--form {
-  padding: 36px 20px 53px 20px;
+  padding: 37px 20px 0 20px;
+  margin-top: -1px;
+  margin-bottom: 63px;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 166px 102px 166px;
+    padding: 65px 166px 104px 166px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 383px 67px 383px;
+    padding: 115px 380px 67px;
   }
 }

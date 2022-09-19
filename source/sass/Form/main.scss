@@ -10,16 +10,6 @@
     justify-content: center;
     margin-left: 60px;
     margin-right: 60px;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr 1fr 1fr 1fr 58px;
-    // row-gap: 48px;
-    // grid-template-areas:
-    // "user contacts"
-    // "radio radio"
-    // "checkbox checkbox"
-    // "textarea textarea"
-    // "formButton formButton";
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +21,7 @@
 
 .form-container__feedback:last-child {
   margin-top: -10px;
+
   @media (min-width: $tablet-width) {
     margin-top: 0px;
   }

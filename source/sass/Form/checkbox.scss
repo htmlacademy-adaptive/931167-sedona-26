@@ -1,16 +1,22 @@
 .checkbox {
-  padding-bottom: 13px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     grid-area: checkbox;
     padding: 0;
-    margin-top: 48px;
+    margin-top: 50px;
     min-width: 100%;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 100%;
+    margin-top: 74px;
+  }
+
+  .feedback__title--attractions {
+    margin-right: 3px;
+    margin-left: 1px;
   }
 }
 
@@ -18,10 +24,13 @@
 .feedback__checkbox {
   @media (min-width: $tablet-width) {
     grid-column-gap: 32px;
-  }
-  
-  @media (min-width: $tablet-width) {
-    gap: 64px;
+    margin-top: 17px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 906px;
+    margin-top: 49px;
+    margin-left: 36px;
+    gap: 64px;
+  }
 }

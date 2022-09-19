@@ -20,6 +20,7 @@
 
 
 // form
+
 @import "./form/main.scss";
 @import "./form/contacts.scss";
 @import "./form/radio.scss";
@@ -52,6 +53,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  
+
 
   @media (min-width: $mobile-width-only) {
     max-width: $tablet-width;

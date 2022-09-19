@@ -1,6 +1,6 @@
 // Offer
 .page-container__offer {
-  padding: 38px 18px 49px 18px;
+  padding: 40px 18px 49px 18px;
 
   @media (min-width: $tablet-width) {
     min-width: 458px;
@@ -35,7 +35,7 @@
     @extend %font-regular;
     color: $color-gray;
     padding-bottom: 6px;
-    padding-top: 5px;
+    padding-top: 3px;
 
     @media (max-width: 767px) {
       & br {
@@ -51,22 +51,21 @@
     }
   }
 
-
-
-
   .more__button {
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 26px;
-    padding: 16px 49px 16px;
+    padding: 17px 49px 15px;
 
     @media (min-width: $tablet-width) {
       margin-top: 43px;
       min-width: 458px;
+      padding: 15px 49px 17px;
     }
 
     @media (min-width: $desktop-width) {
       margin-top: 48px;
+      padding: 15px 53px 17px;
     }
   }
 }

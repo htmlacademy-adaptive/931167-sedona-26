@@ -10,12 +10,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    // max-width: 854px;
+    margin-top: 36px;
+    margin-left: 41px;
   }
 
 
@@ -40,6 +42,9 @@
     @media (min-width: $tablet-width) {
       min-width: 224px;
     }
+    @media (min-width: $desktop-width) {
+      min-width: 153px;
+    }
   }
 
 
@@ -63,10 +68,10 @@
 
       .control__input:checked + .control__icon::before {
         position: absolute;
-        top: 15.5px;
-        left: 15.5px;
-        width: 15px;
-        height: 15px;
+        top: 13.5px;
+        left: 14.5px;
+        width: 16.5px;
+        height: 16.5px;
         background-color: $control-mark;
         border-radius: 50%;
         content: "";
@@ -139,9 +144,20 @@
         margin: 0;
         margin-left: 16px;
       }
+
+      .control__name--checkbox {
+        margin-top: 1px;
+      }
     }
   }
 }
+
+
+.feedback__title--impressions {
+  padding-top: 1px;
+}
+
+
 
 .feedback__radio {
   @media (min-width: $tablet-width) {
@@ -154,14 +170,18 @@
 
 
 .radio {
-  padding-bottom: 13px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     grid-area: radio;
     padding: 0;
     display: flex;
     align-items: center;
-    margin-top: 63px;
+    margin-top: 65px;
     min-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
   }
 }

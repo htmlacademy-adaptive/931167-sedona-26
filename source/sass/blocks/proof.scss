@@ -1,17 +1,13 @@
 
 .catalog-container__proof {
-  margin-top: 43px;
-
-
+  margin-top: 18px;
 
   @media (min-width: $tablet-width) {
-
-    margin-top: 58px;
+    margin-top: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 62px 377px 84px 377px;
-    margin-top: 62px;
+    margin-top: 66px;
   }
 
   .more__title {
@@ -20,6 +16,17 @@
     line-height: 26px;
     text-transform: uppercase;
     margin: 0;
+    margin-left: 1px;
+    padding-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      padding-right: 3px;
+      padding-bottom: 32px;
+    }
+    @media (min-width: $desktop-width) {
+      padding-bottom: 31px;
+    }
   }
 
   .more__description {
@@ -38,23 +45,25 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 66px;
-      padding-left: 347px;
-      padding-right: 348px;
+      padding: 0px 370px 66px 368px;
     }
   }
 
   .video__image {
     max-width: 280px;
     max-height: 177px;
+    margin-top: 32px;
 
     @media (min-width: $tablet-width) {
       max-width: 648px;
       min-height: 500px;
+      margin-top: 23px;
     }
 
     @media (min-width: $desktop-width) {
       min-width: 800px;
+      margin-left: -2px;
+      margin-top: 16px;
     }
   }
 }

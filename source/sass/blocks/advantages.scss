@@ -1,6 +1,7 @@
 .page-container__advantages {
   display: flex;
   flex-direction: column;
+  margin-top: -1px;
 }
 
 .advantages-card-container {
@@ -24,7 +25,7 @@
 .advantages-card-container--second {
   order: 1;
   padding-top: 39px;
-  padding-bottom: 34px;
+  padding-bottom: 35px;
   padding-left: 24px;
 
   @media (min-width: $tablet-width) {
@@ -34,7 +35,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 53px;
-    padding-top: 52px;
+    padding-top: 50px;
   }
 }
 
@@ -92,10 +93,11 @@
   .advantages-card__title--second  {
     @media (min-width: $tablet-width) {
       max-width: 150px;
+      margin-top: 2px;
     }
 
     @media (min-width: $desktop-width) {
-
+      margin-left: -2px;
     }
   }
 
@@ -112,13 +114,14 @@
     @media (min-width: $tablet-width) {
       padding-top: 1px;
       max-width: 196px;
-      margin-left: 29px;
+      margin-left: 13px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 0px;
+      padding-top: 9px;
+      margin-top: -10px;
       max-width: 233px;
-      margin-left: 13px;
+      margin-left: 30px;
     }
   }
 
@@ -168,7 +171,7 @@
 
 .advantages__recommend {
   background-color: $color-white;
-  padding: 32px 18px 52px 65px;
+  padding: 32px 18px 51px 65px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -181,13 +184,13 @@
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 27px;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 41px 40px 41px 33px;
+    padding: 40px 40px 41px 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -216,7 +219,7 @@
     }
 
     &:nth-child(2) {
-      padding-bottom: 51px;
+      padding-bottom: 52px;
 
       &::after {
         display: block;
@@ -224,7 +227,7 @@
         content: "";
         border-bottom: 1px solid $color-gray-light;
         width: 284px;
-        bottom: 25px;
+        bottom: 26px;
         left: -6px;
       }
     }
@@ -288,6 +291,11 @@
   @media (min-width: $desktop-width) {
     padding-top: 2px;
     margin-right: 18px;
+  }
+  .advantages-card__title {
+    @media (min-width: $tablet-width) {
+     margin-top: 2px;
+    }
   }
 }
 
