@@ -1,4 +1,5 @@
 .button {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   background-color: $color-blue;
   border: none;
   @include font-bold(21px);

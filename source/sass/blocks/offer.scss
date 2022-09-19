@@ -1,10 +1,10 @@
 // Offer
 .page-container__offer {
-  padding: 38px 18px 49px 18px;
+  padding: 40px 18px 49px 18px;
 
   @media (min-width: $tablet-width) {
     min-width: 458px;
-    padding: 61px 155px 58px 155px;
+    padding: 59px 155px 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,7 +12,7 @@
     padding: 61px 155px 58px 155px;
   }
   @media (min-width: $desktop-width-full) {
-    padding: 61px 371px 66px 371px;
+    padding: 59px 371px 66px 371px;
   }
 }
 
@@ -23,15 +23,49 @@
   .more__title {
     @include font-bold(21px);
     padding-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      @include font-bold(30px);
+      padding-bottom: 32px;
+
+    }
   }
 
   .more__description {
     @extend %font-regular;
     color: $color-gray;
-    padding-bottom: 38px;
+    padding-bottom: 6px;
+    padding-top: 3px;
+
+    @media (max-width: 767px) {
+      & br {
+          content: "";
+        &::after {
+          content: "\00a0";
+        }
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
   .more__button {
-    padding: 16px 49px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 26px;
+    padding: 17px 49px 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 43px;
+      min-width: 458px;
+      padding: 15px 49px 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 48px;
+      padding: 15px 53px 17px;
+    }
   }
 }

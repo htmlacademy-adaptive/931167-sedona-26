@@ -20,13 +20,32 @@
 }
 
 .feedback__button {
-  padding: 18.5px 33px 13.5px 33px;
+  padding: 18.5px 33px 13.5px 32px;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
 
   @media (min-width: $tablet-width) {
     min-width: 324px;
+    padding: 18.5px 33px 13.5px 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 384px;
   }
 }
 
+
 .necessarily {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 0.6;
+  margin-top: 2px;
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    margin-top: 10px;
+  }
 }

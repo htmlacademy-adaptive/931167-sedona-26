@@ -7,9 +7,17 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    bottom: 15px;
+    bottom: 17px;
     left: 0;
     right: 0;
+
+    @media (min-width: $tablet-width) {
+      bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+    }
   }
 }
 

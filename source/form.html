@@ -3,41 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - форма отзыва</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page__body">
 
 <!-- Form header -->
-<header class="page-header">
-  <button class="page-header__toggle toggle--opened" type="button">
-    <span class="visually-hidden">Открыть меню</span>
-  </button>
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="./img/images/logo.jpg" width="185" height="96" alt="Логотип города Седона">
-  </a>
-  <nav class="page-header__navigation navigation--closed">
-    <ul class="navigation__list">
-      <li class="navigation__item navigation__item--current">
-        <a class="navigation__link" href="index.html">Главная</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="catalog.html">Фото и видео</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="form.html">Форма отзыва</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+  <header class="page-header">
+    <button class="page-header__toggle toggle toggle--opened toggle--no-js" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <a class="page-header__logo logo logo--no-js" href="index.html">
+      <img class="page-header__logo-image" src="img/icons/header-logo.png" width="185" height="96" alt="Логотип города Седона">
+    </a>
+    <nav class="page-header__navigation navigation navigation--closed navigation--no-js">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
 
   <main class="form-container">
     <h1 class="visually-hidden">Форма для отправки отзыва</h1>
     <section class="form-container__hero hero">
-        <img class="hero__logo hero__logo--additional" width="229" height="39" src="./img/images/additional-logo.svg" alt="Главная надпись на английском">
+        <img class="hero__logo hero__logo--additional hero__logo--form" width="229" height="39" src="img/icons/additional-logo.svg" alt="Главная надпись на английском">
         <picture>
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/images/webp/index-back-desktop.webp 1x, img/images/webp/index-back-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/images/webp/index-back-desktop.webp 1x, img/images/webp/index-back-desktop@2x.webp 2x">
@@ -58,14 +59,14 @@
     <form class="form-container__feedback feedback" method="post" action="https://echo.htmlacademy.ru/">
       <h2 class="visually-hidden">Заполните форму</h2>
       <fieldset class="feedback__group user">
-        <label class="feedback__title">Предствьтесь:</label>
+        <label class="feedback__title">Представьтесь:</label>
         <div class="feedback__wrapper person">
           <label class="person__label" for="name">Имя*:</label>
-          <input class="person__input" type="text" name="name" id="name" placeholder="Введите Имя" required>
+          <input class="person__input" type="text" name="name" id="name" placeholder="Пётр" required>
           <label class="person__label" for="surname">Фамилия*:</label>
-          <input class="person__input" type="text" name="surname" id="surname" placeholder="Введите фамилию" required>
+          <input class="person__input" type="text" name="surname" id="surname" placeholder="Пустота" required>
           <label class="person__label" for="middle-name">Отчество*:</label>
-          <input class="person__input" type="text" name="middle-name" id="middle-name" placeholder="Введите отчество" required>
+          <input class="person__input" type="text" name="middle-name" id="middle-name" placeholder="Викторович" required>
         </div>
       </fieldset>
 
@@ -124,28 +125,28 @@
             <label class="control">
               <input class="visually-hidden checkbox__input" type="checkbox" value="Мост Дьявола">
               <span class="checkbox__icon"></span>
-              <span class="control__name">Мост Дьявола</span>
+              <span class="control__name control__name--checkbox">Мост Дьявола</span>
             </label>
           </li>
           <li class="feedback__item feedback__item--checkbox">
             <label class="control">
               <input class="visually-hidden checkbox__input" type="checkbox" value="Гора-Колокол">
               <span class="checkbox__icon"></span>
-              <span class="control__name">Гора-Колокол</span>
+              <span class="control__name control__name--checkbox">Гора-Колокол</span>
             </label>
           </li>
           <li class="feedback__item feedback__item--checkbox">
             <label class="control">
               <input class="visually-hidden checkbox__input" type="checkbox" value="Слайд-Парк">
               <span class="checkbox__icon"></span>
-              <span class="control__name">Слайд-Парк</span>
+              <span class="control__name control__name--checkbox">Слайд-парк</span>
             </label>
           </li>
           <li class="feedback__item feedback__item--checkbox">
             <label class="control">
               <input class="visually-hidden checkbox__input" type="checkbox" value="Красные скалы">
               <span class="checkbox__icon"></span>
-              <span class="control__name">Красные скалы</span>
+              <span class="control__name control__name--checkbox">Красные скалы</span>
             </label>
           </li>
         </ul>
@@ -155,7 +156,6 @@
       <fieldset class="feedback__group textarea">
         <label class="feedback__title feedback__title--emotions" for="textarea">Опишите свои эмоции:</label>
           <textarea class="feedback__textarea" name="textarea" id="textarea" cols="2" rows="2" placeholder="Опишите подробно все свои восторги"></textarea>
-        </label>
       </fieldset>
 
       <div class="feedback__container">
@@ -166,7 +166,7 @@
   </main>
 
   <!-- form footer -->
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <h2 class="visually-hidden">Мы в социальных сетях</h2>
     <div class="page-footer__hashtag hashtag">
       <p class="visually-hidden">Наш хэштег</p>
@@ -177,24 +177,24 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="#">
-            <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/images/sprite.svg#vkicon">
+            <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14">
+              <use href="./img/sprite.svg#vkontakte">
             </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="#">
-            <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/images/sprite.svg#tgicon">
+            <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18">
+              <use href="./img/sprite.svg#telegram">
             </svg>
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
-            <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/images/sprite.svg#youtubeicon">
+            <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14">
+              <use href="./img/sprite.svg#youtube">
             </svg>
             <span class="visually-hidden">Ютьюб</span>
           </a>
@@ -203,8 +203,8 @@
     </div>
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="#">Разработано
-        <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use href="./img/images/sprite.svg#htmlacademylogo">
+        <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35">
+          <use href="./img/sprite.svg#htmlacademy">
         </svg>
         <span class="visually-hidden">HTML ACADEMY</span>
       </a>
@@ -212,32 +212,30 @@
   </footer>
 
 <!-- Modal windows -->
-  <!-- <div class="popup">
-    <div class="popup__container">
-      <p class="modal__title">Что-то пошло не так!</p>
-      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button button" type="button">
-        <span class="button__text button__text--modal-modile">Ок</span>
-      </button>
-
+  <!-- <div class="modal">
+    <div class="modal__container modal__container--error">
+        <p class="modal__title">Что-то пошло не так!</p>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button button" type="button">
+          <span class="button__text button__text--error">Ок</span>
+        </button>
     </div>
   </div>
 
   <div class="modal">
-    <span class="modal__title">Что-то пошло не так!</span>
-    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button button" type="button">
-      <span class="button__text button__text--modal-modile">Ок</span>
-    </button>
-  </div>
-
-  <div class="modal">
-    <span class="modal__title">Ваш отзыв отправлен!</span>
-    <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.ь</p>
-    <button class="modal__button button" type="button">
-      <span class="button__text button__text--modal-modile">Ок</span>
-    </button>
+    <div class="modal__container modal--thanks">
+      <div class="modal__container">
+        <p class="modal__title modal__title--thanks">Ваш отзыв отправлен!</p>
+        <p class="modal__description modal__description--thanks">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__container--button">
+        <button class="modal__button button modal__button--thanks" type="button">
+          <span class="button__text button__text--modal-tablet">Закрыть окно</span>
+        </button>
+      </div>
+    </div>
   </div> -->
-  <script src="./js/script.js"></script>
+
+  <script src="js/script.min.js"></script>
   </body>
 </html>
