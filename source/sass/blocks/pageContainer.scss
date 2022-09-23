@@ -1,0 +1,27 @@
+.page-container__hero {
+  position: relative;
+}
+
+.page-container__offer {
+  padding: 40px 18px 49px 18px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+    padding: 61px 155px 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 458px;
+    padding: 61px 155px 58px 155px;
+  }
+
+  @media (min-width: $desktop-width-full) {
+    padding: 59px 371px 66px 371px;
+  }
+}
+
+.page-container__advantages {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1px;
+}

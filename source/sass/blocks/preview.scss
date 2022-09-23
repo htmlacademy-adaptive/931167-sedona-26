@@ -8,7 +8,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url(/img/icons/triangle-top.svg);
+    background-image: url("../img/icons/triangle-top.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -75,8 +75,8 @@
   }
 
   .page__text {
-    @extend %font-regular;
-    color: #333333;
+    @extend%font-regular;
+    color: $color-gray;
     margin-right: 21px;
     margin-left: 19px;
 
@@ -91,23 +91,42 @@
   }
 }
 
-.page__preview--catalog, .page__preview--form  {
+.page__preview--catalog,
+.page__preview--form {
   &::before {
     top: -57px;
-    }
-    @media (min-width: $tablet-width) {
-      &::before {
-        top: -56px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: -56px;
     }
   }
 }
 
 .page__preview--form {
+  padding: 37px 20px 0 20px;
+  margin-top: -1px;
+  margin-bottom: 63px;
+
+  &::before {
+    top: -56px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 166px 104px 166px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 380px 67px;
+  }
+
   .page__text {
     margin: 0;
 
     @media (min-width: $tablet-width) {
-       line-height: 24px;
+      line-height: 24px;
     }
   }
 }
@@ -163,20 +182,5 @@
       padding-left: 0;
       padding-right: 4px;
     }
-  }
-}
-
-.page__preview--form {
-  padding: 37px 20px 0 20px;
-  margin-top: -1px;
-  margin-bottom: 63px;
-
-  @media (min-width: $tablet-width) {
-    padding: 65px 166px 104px 166px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 115px 380px 67px;
   }
 }

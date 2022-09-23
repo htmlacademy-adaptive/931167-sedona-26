@@ -1,9 +1,9 @@
 @import "./common/fonts.scss";
-@import "./common/variables.scss";
 @import "./common/colors.scss";
 @import "./common/extends.scss";
 @import "./common/mixins.scss";
 @import "./common/media.scss";
+@import "./common/global.scss";
 @import "./blocks/header.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/preview.scss";
@@ -15,77 +15,13 @@
 @import "./blocks/proof.scss";
 @import "./blocks/gallery.scss";
 @import "./blocks/location.scss";
-@import "./form/main.scss";
-@import "./form/contacts.scss";
-@import "./form/radio.scss";
-@import "./form/checkbox.scss";
-@import "./form/textarea.scss";
+@import "./blocks/formContainer.scss";
+@import "./blocks/control.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/textarea.scss";
 @import "./blocks/button.scss";
-@import "./form/formButton.scss";
-@import "./form/modals.scss";
-
-
-.page {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  counter-reset: number;
-  height: 100%;
-
-  @media (min-width: $desktop-width) {
-    background-color: $color-curnains;
-  }
-}
-
-body {
-  background-color: $color-white;
-  max-width: 320px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-
-  @media (min-width: $mobile-width-only) {
-    max-width: $tablet-width;
-  }
-
-  @media (min-width: $tablet-width) {
-    max-width: $desktop-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      border-right: 15px solid #000101;
-      border-image: linear-gradient(to right, rgba(0, 1, 1, 0.2), $color-curnains)0 100%;
-      right: -15px;
-      height: 100%;
-    }
-    
-    &::before {
-      position: absolute;
-      content: "";
-      border-right: 15px solid #000101;
-      border-image: linear-gradient(to left, rgba(0, 1, 1, 0.2), $color-curnains)0 100%;
-      left: -15px;
-      height: 100%;
-    }
-  }
-}
-
-main {
-  flex-grow: 2;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-}
+@import "./blocks/feedback.scss";
+@import "./blocks/pageContainer.scss";
+@import "./blocks/modals.scss";
+@import "./blocks/catalogContainer.scss";
 

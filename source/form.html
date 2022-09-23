@@ -34,20 +34,12 @@
     </nav>
   </header>
 
-
   <main class="form-container">
     <h1 class="visually-hidden">Форма для отправки отзыва</h1>
     <section class="form-container__hero hero">
+      <div class="hero__background hero__background--form">
         <img class="hero__logo hero__logo--additional hero__logo--form" width="229" height="39" src="img/icons/additional-logo.svg" alt="Главная надпись на английском">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/images/webp/index-back-desktop.webp 1x, img/images/webp/index-back-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/images/webp/index-back-desktop.webp 1x, img/images/webp/index-back-desktop@2x.webp 2x">
-          <source type="image/webp" srcset="img/images/webp/index-back-desktop.webp 1x, img/images/webp/index-back-desktop@2x.webp 2x">
-
-          <source media="(min-width: 1200px)" srcset="img/images/index-back-desktop.jpg 1x, img/images/index-back-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/images/index-back-tablet.jpg 1x, img/images/index-back-tablet@2x.jpg 2x">
-          <img class="hero__backgorund hero__backgorund--catalog" src="img/images/index-back-mobile.jpg" srcset="img/images/index-back-mobile@2x.jpg 2x" width="320" height="158" alt="Фотография нашего городка">
-        </picture>
+      </div>
     </section>
 
     <div class="page__preview page__preview--form">
@@ -74,14 +66,14 @@
       <fieldset class="feedback__group contacts">
         <label class="feedback__title feedback__title--information">Контактная информация:</label>
         <div class="feedback__wrapper phone">
-          <label class="person__label" for="phone">Контактный телефон*:</label>
+          <label class="contacts__label" for="phone">Контактный телефон*:</label>
           <div class="contacts__container">
             <input class="contacts__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
             <img class="contacts__icon contacts__icon--phone" src="./img/icons/phone.svg" width="18" height="18" alt="Введите телефон">
           </div>
         </div>
         <div class="feedback__wrapper email">
-          <label class="person__label" for="email">Электронная почта*:</label>
+          <label class="contacts__label" for="email">Электронная почта*:</label>
           <div class="contacts__container">
             <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите email" required>
             <img class="contacts__icon contacts__icon--email" src="./img/icons/mail.svg" width="16" height="12" alt="Введите телефон">
@@ -96,21 +88,21 @@
           <li class="feedback__item feedback__item--radio">
             <label class="control">
               <input class="visually-hidden control__input" type="radio" name="impression" value="Скорее положительное" checked>
-              <span class="control__icon"></span>
+              <span class="control__icon" tabindex="0"></span>
               <span class="control__name">Скорее положительное</span>
             </label>
           </li>
           <li class="feedback__item feedback__item--radio">
             <label class="control">
               <input class="visually-hidden control__input" type="radio" name="impression" value="Скорее отрицательное" checked>
-              <span class="control__icon"></span>
+              <span class="control__icon" tabindex="1"></span>
               <span class="control__name">Скорее отрицательное</span>
             </label>
           </li>
           <li class="feedback__item feedback__item--radio">
             <label class="control">
               <input class="visually-hidden control__input" type="radio" name="impression" value="Затрудняюсь ответить" checked>
-              <span class="control__icon"></span>
+              <span class="control__icon" tabindex="2"></span>
               <span class="control__name">Затрудняюсь ответить</span>
             </label>
           </li>
@@ -124,28 +116,28 @@
           <li class="feedback__item feedback__item--checkbox">
             <label class="control">
               <input class="visually-hidden checkbox__input" type="checkbox" value="Мост Дьявола">
-              <span class="checkbox__icon"></span>
+              <span class="checkbox__icon" tabindex="3"></span>
               <span class="control__name control__name--checkbox">Мост Дьявола</span>
             </label>
           </li>
           <li class="feedback__item feedback__item--checkbox">
             <label class="control">
               <input class="visually-hidden checkbox__input" type="checkbox" value="Гора-Колокол">
-              <span class="checkbox__icon"></span>
+              <span class="checkbox__icon" tabindex="4"></span>
               <span class="control__name control__name--checkbox">Гора-Колокол</span>
             </label>
           </li>
           <li class="feedback__item feedback__item--checkbox">
             <label class="control">
               <input class="visually-hidden checkbox__input" type="checkbox" value="Слайд-Парк">
-              <span class="checkbox__icon"></span>
+              <span class="checkbox__icon" tabindex="5"></span>
               <span class="control__name control__name--checkbox">Слайд-парк</span>
             </label>
           </li>
           <li class="feedback__item feedback__item--checkbox">
             <label class="control">
               <input class="visually-hidden checkbox__input" type="checkbox" value="Красные скалы">
-              <span class="checkbox__icon"></span>
+              <span class="checkbox__icon" tabindex="6"></span>
               <span class="control__name control__name--checkbox">Красные скалы</span>
             </label>
           </li>
@@ -155,12 +147,12 @@
 <!-- Textarea -->
       <fieldset class="feedback__group textarea">
         <label class="feedback__title feedback__title--emotions" for="textarea">Опишите свои эмоции:</label>
-          <textarea class="feedback__textarea" name="textarea" id="textarea" cols="2" rows="2" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="feedback__textarea" name="textarea" id="textarea" cols="2" rows="2" placeholder="Опишите подробно все свои восторги" tabindex="7"></textarea>
       </fieldset>
 
       <div class="feedback__container">
-        <button class="feedback__button button" type="submit">Отправить отзыв</button>
-        <span class="necessarily">*-Обязательные поля</span>
+        <button class="feedback__button button" type="submit" tabindex="9">Отправить отзыв</button>
+        <span class="feedback__necessarily">*-Обязательные поля</span>
       </div>
     </form>
   </main>
@@ -176,7 +168,7 @@
       <p class="visually-hidden">Наши социальные сети</p>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
+          <a class="social__link social__link--vkontakte" href="#"            >
             <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14">
               <use href="./img/sprite.svg#vkontakte">
             </svg>

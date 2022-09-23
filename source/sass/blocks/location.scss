@@ -2,9 +2,13 @@
   display: flex;
 }
 
-
 .location__image {
   border: none;
   display: block;
   min-width: 100%;
+  background-image: url("../img/images/map-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/images/map-desktop.jpg");
+  }
 }

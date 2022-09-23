@@ -133,10 +133,8 @@ export const build = gulp.series(
     svg,
     sprite,
     createWebp
-  ),
-  gulp.series(
-    server
-));
+  )
+);
 
 export default gulp.series(
   clean,
