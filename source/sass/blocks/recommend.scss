@@ -6,15 +6,15 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      padding: 159px 31px 59px 32px;
+      padding: 0 31px 59px 32px;
       text-align: center;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 157px 78px 78px 60px;
+      padding: 0 78px 77px 60px;
     }
-
 
     .recommend__item:not(:last-child) {
       padding-bottom: 30px;
@@ -27,29 +27,24 @@
     .recommend__item {
       position: relative;
 
-
-
       @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
         max-width: 193px;
+        margin-top: 159px;
       }
 
       @media (min-width: $desktop-width) {
         max-width: 278px;
+        margin-top: 157px;
       }
     }
   }
 }
 
 .recommend__item--house {
-
-  @media (min-width: $tablet-width) {
-
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -78,7 +73,6 @@
   }
 
   & .recommend__title {
-
     @media (min-width: $desktop-width) {
       padding-top: 4px;
     }
@@ -93,9 +87,6 @@
   }
 
   & .recommend__title {
-    @media (min-width: $tablet-width) {
-    }
-
     @media (min-width: $desktop-width) {
       padding-left: 20px;
       padding-top: 2px;
@@ -117,10 +108,6 @@
 
   @media (min-width: $tablet-width) {
     margin-left: -3px;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 
   &::before {
@@ -187,10 +174,10 @@
   }
 
   & .recommend__description {
-
     @media (max-width: 1199px) {
       & br {
         content: "";
+
         &::after {
           content: "\00a0";
         }
@@ -212,14 +199,10 @@
     @include font-bold(21px);
     padding-bottom: 23px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .recommend__description {
-  @extend %font-regular;
+  @extend%font-regular;
   color: $color-gray;
 
   .text__gap--souvenirs {

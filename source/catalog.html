@@ -9,11 +9,11 @@
   <body class="page__body">
 
 <!-- Catalog header -->
-  <header class="page-header">
+  <header class="page-header catalog-header">
     <button class="page-header__toggle toggle toggle--opened toggle--no-js" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <a class="page-header__logo logo logo--no-js" href="index.html">
+    <a class="page-header__logo catalog-header__logo logo logo--no-js" href="index.html">
       <img class="page-header__logo-image" src="img/icons/header-logo.png" width="185" height="96" alt="Логотип города Седона">
     </a>
     <nav class="page-header__navigation navigation navigation--closed navigation--no-js">
@@ -38,16 +38,9 @@
   <main class="catalog-container">
     <h1 class="visually-hidden">Каталог с фотографиями и видео</h1>
     <section class="catalog-container__hero hero">
-      <img class="hero__logo hero__logo--additional hero__logo--catalog" width="229" height="39" src="img/icons/additional-logo.svg" alt="Главная надпись на английском">
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/images/webp/index-back-desktop.webp 1x, img/images/webp/index-back-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/images/webp/index-back-desktop.webp 1x, img/images/webp/index-back-desktop@2x.webp 2x">
-        <source type="image/webp" srcset="img/images/webp/index-back-desktop.webp 1x, img/images/webp/index-back-desktop@2x.webp 2x">
-
-        <source media="(min-width: 1200px)" srcset="img/images/index-back-desktop.jpg 1x, img/images/index-back-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/images/index-back-tablet.jpg 1x, img/images/index-back-tablet@2x.jpg 2x">
-        <img class="hero__backgorund hero__backgorund--catalog" src="img/images/index-back-mobile.jpg" srcset="img/images/index-back-mobile@2x.jpg 2x" width="320" height="158" alt="Фотография нашего городка">
-      </picture>
+      <div class="hero__background hero__background--catalog">
+        <img class="hero__logo hero__logo--additional hero__logo--catalog" width="229" height="39" src="img/icons/additional-logo.svg" alt="Главная надпись на английском">
+      </div>
     </section>
 
     <section class="catalog-container__gallery gallery">
@@ -168,10 +161,10 @@
     </section>
 
 <!-- proof -->
-    <section class="catalog-container__proof more video">
-      <h2 class="more__title">Все еще сомневаетесь?</h2>
-      <p class="more__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <img class="video__image" src="./img/images/video-desktop.jpg" width="800" height="500" alt="Видео достопримечательностей">
+    <section class="catalog-container__proof proof offer">
+      <h2 class="proof__title">Все еще сомневаетесь?</h2>
+      <p class="proof__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <img class="proof__image" src="./img/images/video-desktop.jpg" width="800" height="500" alt="Видео достопримечательностей">
     </section>
   </main>
 

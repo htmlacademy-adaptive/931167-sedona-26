@@ -1,7 +1,6 @@
-// footer
 .page-footer {
   background-color: $color-white;
-  padding: 39px 77px  20px 77px;
+  padding: 39px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +25,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-top: 1px;
+    margin-top: -4px;
   }
 
   .hashtag__text {
@@ -35,7 +34,7 @@
 }
 
 .social {
-  padding-bottom: 40px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -44,77 +43,87 @@
   }
 
   .social__list {
-    min-width: 156px;
+    max-width: 162px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    margin-left: 3px;
+    margin-left: 9px;
+    flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
-      min-width: 156px;
+      max-width: 162px;
+      margin-left: 11px;
+    }
+  }
+
+  .social__item {
+    background-color: $color-blue;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    margin-bottom: 6px;
+    margin-right: 6px;
+
+    &:hover {
+      background-color: $button-hover;
     }
 
-    .social__item {
-      background-color: $color-blue;
-      width: 48px;
-      height: 48px;
-      padding: 0;
+    &:active {
+      background-color: $button-down;
+    }
+  }
+}
 
-      &:hover {
-        background-color: $button-hover;
-      }
+.social__link {
+  position: relative;
+  color: $color-black;
 
-      &:active {
-        background-color: $button-down;
-      }
+  &--vkontakte svg {
+    margin-top: 17px;
+    margin-left: 12px;
+  }
 
-      .social__link {
-        position: relative;
-        color: $color-black;
+  &--telegram svg {
+    margin-top: 15.02px;
+    margin-left: 13.5px;
+  }
 
-        &--vkontakte {
-          top: 17px;
-          left: 12px;
-        }
+  &--youtube svg {
+    margin-top: 17px;
+    margin-left: 14px;
+  }
 
-        &--telegram {
-          top: 15.02px;
-          left: 13.5px;
-        }
+  .social__icon {
+    position: absolute;
+    fill: $color-white;
 
-        &--youtube {
-          top: 17px;
-          left: 14px;
-        }
-
-        .social__icon {
-          position: absolute;
-          fill: $color-white;
-
-          &:active {
-            opacity: 0.3;
-          }
-        }
-      }
+    &:active {
+      opacity: 0.3;
     }
   }
 }
 
 .page-footer__copyright {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
 
-
-  .copyright__title {
-    @extend %font-regular;
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
   }
 
-  .copyright__link, .copyright__icon{
+
+  .copyright__title {
+    @extend%font-regular;
+  }
+
+  .copyright__link,
+  .copyright__icon {
     text-decoration: none;
-    @extend %font-regular;
+    @extend%font-regular;
     color: $color-black;
     height: 35px;
 
@@ -125,7 +134,7 @@
 
     &:active {
       color: $copyright__icon-active;
-      fill:  $copyright__icon-active;
+      fill: $copyright__icon-active;
     }
   }
 
@@ -148,6 +157,7 @@
 
   .social__list {
     margin: 0;
+    margin-left: 6px;
   }
 }
 
@@ -160,7 +170,7 @@
   }
 
   .social__list {
-    margin-left: -1px;
+    margin-left: 5px;
   }
 
   .social {

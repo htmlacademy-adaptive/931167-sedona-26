@@ -2,7 +2,7 @@
   &::before {
     counter-increment: number;
     content: "- " "№"counter(number) " -";
-    @extend %font-regular;
+    @extend%font-regular;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -13,10 +13,6 @@
 
     @media (min-width: $tablet-width) {
       bottom: 23px;
-    }
-
-    @media (min-width: $desktop-width) {
-
     }
   }
 }

@@ -1,11 +1,3 @@
-.page-container__hero {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-
-  }
-}
-
 .hero__logo {
   max-width: 100%;
   max-height: 100%;
@@ -16,7 +8,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-
+  object-fit: contain;
 
   @media (min-width: $tablet-width) {
     min-width: 461px;
@@ -26,12 +18,10 @@
     bottom: 0;
     left: 0;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
-.hero__logo--catalog, .hero__logo--form {
+.hero__logo--catalog,
+.hero__logo--form {
   top: -16px;
   right: 1px;
 }
@@ -51,53 +41,46 @@
   }
 }
 
-
-.hero__backgorund {
+.hero__background {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-white;
+  background-image: url("../img/images/index-back-mobile.jpg");
 
   @media (min-width: $tablet-width) {
-    min-height:  518px;
-  }
-
-  @media (min-width: $desktop-width) {
+    background-image: url("../img/images/index-back-desktop.jpg");
   }
 }
 
-.hero__backgorund--index {
+.hero__background--index {
   min-height: 389px;
 
   @media (min-width: $tablet-width) {
-    min-height:  518px;
-  }
-
-  @media (min-width: $desktop-width) {
+    min-height: 518px;
   }
 }
 
-.hero__backgorund--catalog, .hero__backgorund--form {
-  min-height: 159px;
+.hero__background--catalog,
+.hero__background--form {
+  background-image: url("../img/images/catalog-back-mobile.jpg");
+  height: 159px;
 
-  @media (min-width: $tablet-width) {
-    max-height:  290px;
+  @media (min-width: 321px) and (max-width: $tablet-width) {
+    min-height: 290px;
+    background-image: url("../img/images/catalog-back-tablet.jpg");
   }
 
-  @media (min-width: $desktop-width) {
-    max-height:  301px;
+  @media (min-width: 769px) {
+    min-height: 301px;
+    background-image: url("../img/images/catalog-back-desktop.jpg");
   }
 }
-
 
 .hero {
   text-align: center;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-
-  }
-
-  @media (min-width: $desktop-width) {
-  }
 }

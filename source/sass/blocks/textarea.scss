@@ -1,0 +1,18 @@
+.textarea {
+  margin-bottom: 56px;
+  margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: textarea;
+    padding: 0;
+    min-width: 100%;
+    margin-top: 43px;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 768px;
+    margin-top: 87px;
+  }
+}

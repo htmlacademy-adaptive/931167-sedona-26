@@ -1,0 +1,50 @@
+.checkbox {
+  margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: checkbox;
+    padding: 0;
+    margin-top: 50px;
+    min-width: 100%;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 100%;
+    margin-top: 74px;
+  }
+
+  .feedback__title--attractions {
+    margin-right: 3px;
+    margin-left: 1px;
+  }
+}
+
+.checkbox__input:checked + .checkbox__icon::before {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/icons/tick.svg");
+  content: "";
+}
+
+.checkbox__icon {
+  top: -2px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border: none;
+  background-color: $fordFieldsColor;
+  border-radius: 4%;
+
+  &:hover {
+    background-color: $control-hover;
+  }
+
+  &:active {
+    background-color: $control-active;
+  }
+}

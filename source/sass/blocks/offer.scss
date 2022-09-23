@@ -1,45 +1,27 @@
-// Offer
-.page-container__offer {
-  padding: 40px 18px 49px 18px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 458px;
-    padding: 59px 155px 58px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 458px;
-    padding: 61px 155px 58px 155px;
-  }
-  @media (min-width: $desktop-width-full) {
-    padding: 59px 371px 66px 371px;
-  }
-}
-
-.more {
+.offer {
   background-color: $color-white;
   text-align: center;
 
-  .more__title {
+  .offer__title {
     @include font-bold(21px);
     padding-bottom: 16px;
 
     @media (min-width: $tablet-width) {
       @include font-bold(30px);
       padding-bottom: 32px;
-
     }
   }
 
-  .more__description {
-    @extend %font-regular;
+  .offer__description {
+    @extend%font-regular;
     color: $color-gray;
     padding-bottom: 6px;
     padding-top: 3px;
 
     @media (max-width: 767px) {
       & br {
-          content: "";
+        content: "";
+
         &::after {
           content: "\00a0";
         }
@@ -51,14 +33,13 @@
     }
   }
 
-  .more__button {
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  .offer__button {
     text-align: center;
     margin-top: 26px;
     padding: 17px 49px 15px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 43px;
+      margin-top: 41px;
       min-width: 458px;
       padding: 15px 49px 17px;
     }
