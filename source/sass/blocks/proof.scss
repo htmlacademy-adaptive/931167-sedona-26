@@ -56,3 +56,28 @@
     margin-top: 16px;
   }
 }
+
+.proof__image__wrap {
+  position: relative;
+}
+
+.proof__button-play {
+  background-image: url("../img/icons/video-play.svg");
+  width: 48px;
+  height: 54px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.proof__button-play:focus {
+  transform: translate(-50%, -50%) scale(1.3);
+}

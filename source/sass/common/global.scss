@@ -1,13 +1,3 @@
-.page {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  counter-reset: number;
-  height: 100%;
-
-  @media (min-width: $desktop-width) {
-    background-color: $color-curnains;
-  }
-}
-
 body {
   background-color: $color-white;
   max-width: 320px;
@@ -66,7 +56,7 @@ input,
 button,
 textarea {
   outline: 0;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
 }
 
 input:focus + span {

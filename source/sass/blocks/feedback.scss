@@ -269,6 +269,11 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    background-color: $color-white;
+    box-shadow: 4px 4px 0 $control-hover inset, -4px -4px 0 $control-hover inset;
+  }
+
   @media (min-width: $tablet-width) {
     height: 127px;
     min-width: 95%;

@@ -4,7 +4,14 @@
     <meta charset="utf-8">
     <title>Седона - фото и видео</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon32.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/icon180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -67,7 +74,7 @@
               <p class="gallery__author">Автор фото: Борис</p>
             </div>
             <div class="gallery__social">
-              <button class="gallery__like" type="button">
+              <button class="gallery__like" type="button" aria-label="Поставить лайк">
                 <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="black" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="1" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                   </svg>
@@ -94,7 +101,7 @@
               <p class="gallery__author">Автор фото: Сергей</p>
             </div>
             <div class="gallery__social">
-              <button class="gallery__like" type="button">
+              <button class="gallery__like" type="button" aria-label="Поставить лайк">
                 <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="black" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="1" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                   </svg>
@@ -121,7 +128,7 @@
               <p class="gallery__author">Автор фото: Петр</p>
             </div>
             <div class="gallery__social gallery__social--text-edit">
-              <button class="gallery__like" type="button">
+              <button class="gallery__like" type="button" aria-label="Поставить лайк">
                 <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="black" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="1" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                   </svg>
@@ -148,7 +155,7 @@
               <p class="gallery__author">Автор фото: Антон</p>
             </div>
             <div class="gallery__social gallery__social--text-edit">
-              <button class="gallery__like" type="button">
+              <button class="gallery__like" type="button" aria-label="Поставить лайк">
                 <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="black" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="1" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                   </svg>
@@ -164,7 +171,10 @@
     <section class="catalog-container__proof proof offer">
       <h2 class="proof__title">Все еще сомневаетесь?</h2>
       <p class="proof__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <img class="proof__image" src="./img/images/video-desktop.jpg" width="800" height="500" alt="Видео достопримечательностей">
+      <div class="proof__image__wrap">
+        <button class="proof__button-play"><span class="visually-hidden">Включить видео</span></button>
+        <img class="proof__image" src="./img/images/video-desktop.jpg" width="800" height="500" alt="Видео достопримечательностей">
+      </div>
     </section>
   </main>
 
