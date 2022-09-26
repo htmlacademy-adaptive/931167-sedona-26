@@ -9,7 +9,7 @@
     background-color: $button-hover;
   }
 
-  &:active {
+  &:focus {
     background-color: $button-down;
     color: rgba(255, 255, 255, 0.3);
   }
