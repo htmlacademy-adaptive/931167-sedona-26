@@ -6,12 +6,13 @@
 @import "./common/global.scss";
 @import "./blocks/header.scss";
 @import "./blocks/hero.scss";
-@import "./blocks/preview.scss";
+@import "./blocks/page.scss";
 @import "./blocks/advantages.scss";
+@import "./blocks/advantagesCard.scss";
 @import "./blocks/counter.scss";
 @import "./blocks/recommend.scss";
 @import "./blocks/offer.scss";
-@import "./blocks/footer.scss";
+@import "./blocks/pageFooter.scss";
 @import "./blocks/proof.scss";
 @import "./blocks/gallery.scss";
 @import "./blocks/location.scss";
@@ -37,4 +38,5 @@
 @import "./blocks/social.scss";
 @import "./blocks/toggle.scss";
 @import "./blocks/user.scss";
+@import "./blocks/controlContainer.scss";
 

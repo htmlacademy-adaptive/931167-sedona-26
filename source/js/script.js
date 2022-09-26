@@ -5,6 +5,8 @@ let navLogo = document.querySelector('.page-header__logo');
 headerToggle.classList.remove('toggle--no-js');
 navToggle.classList.remove('navigation--no-js');
 navLogo.classList.remove('logo--no-js');
+navToggle.classList.remove('navigation--opened');
+navToggle.classList.add('navigation--closed');
 
 
 headerToggle.addEventListener('click', function () {
