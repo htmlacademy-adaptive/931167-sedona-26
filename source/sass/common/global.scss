@@ -68,3 +68,7 @@ textarea {
   outline: 0;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
+
+input:focus + span {
+  background-color: $control-active;
+}
