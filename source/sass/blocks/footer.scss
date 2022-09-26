@@ -18,93 +18,6 @@
   }
 }
 
-.hashtag {
-  text-align: center;
-  padding-bottom: 33px;
-  margin-right: 2px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-top: -4px;
-  }
-
-  .hashtag__text {
-    @include font-bold(21px);
-  }
-}
-
-.social {
-  padding-bottom: 34px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-left: -10px;
-    margin-top: -2px;
-  }
-
-  .social__list {
-    max-width: 162px;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    margin-left: 9px;
-    flex-wrap: wrap;
-
-    @media (min-width: $tablet-width) {
-      max-width: 162px;
-      margin-left: 11px;
-    }
-  }
-
-  .social__item {
-    background-color: $color-blue;
-    width: 48px;
-    height: 48px;
-    padding: 0;
-    margin-bottom: 6px;
-    margin-right: 6px;
-
-    &:hover {
-      background-color: $button-hover;
-    }
-
-    &:active {
-      background-color: $button-down;
-    }
-  }
-}
-
-.social__link {
-  position: relative;
-  color: $color-black;
-
-  &--vkontakte svg {
-    margin-top: 17px;
-    margin-left: 12px;
-  }
-
-  &--telegram svg {
-    margin-top: 15.02px;
-    margin-left: 13.5px;
-  }
-
-  &--youtube svg {
-    margin-top: 17px;
-    margin-left: 14px;
-  }
-
-  .social__icon {
-    position: absolute;
-    fill: $color-white;
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-}
-
 .page-footer__copyright {
   display: flex;
   flex-wrap: wrap;
@@ -113,34 +26,6 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -5px;
-  }
-
-
-  .copyright__title {
-    @extend%font-regular;
-  }
-
-  .copyright__link,
-  .copyright__icon {
-    text-decoration: none;
-    @extend%font-regular;
-    color: $color-black;
-    height: 35px;
-
-    &:hover {
-      color: $color-blue;
-      fill: $color-blue;
-    }
-
-    &:active {
-      color: $copyright__icon-active;
-      fill: $copyright__icon-active;
-    }
-  }
-
-  .copyright__icon {
-    vertical-align: middle;
-    margin-left: 9px;
   }
 }
 
@@ -154,11 +39,6 @@
   @media (min-width: $desktop-width) {
     padding: 118px 119px 36px 120px;
   }
-
-  .social__list {
-    margin: 0;
-    margin-left: 6px;
-  }
 }
 
 .page-footer--form {
@@ -167,16 +47,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 101.5px;
-  }
-
-  .social__list {
-    margin-left: 5px;
-  }
-
-  .social {
-    @media (min-width: $tablet-width) {
-      margin-left: -9px;
-    }
   }
 }
 

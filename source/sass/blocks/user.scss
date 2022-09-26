@@ -1,0 +1,25 @@
+.user {
+  padding-bottom: 64px;
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: user;
+    padding: 0;
+    margin-left: 1px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      border-right: 1px solid $catalog-card-line;
+      left: 100%;
+      bottom: -15px;
+      max-height: 353px;
+      top: -1px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 430px;
+  }
+}

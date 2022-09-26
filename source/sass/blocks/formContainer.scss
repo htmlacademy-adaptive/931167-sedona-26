@@ -15,12 +15,13 @@
     margin-left: 120px;
     margin-right: 120px;
   }
-}
 
-.form-container__feedback:last-child {
-  margin-top: -10px;
+  &:last-child {
+    margin-top: -10px;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 }
+

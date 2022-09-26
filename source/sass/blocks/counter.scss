@@ -15,8 +15,9 @@
       bottom: 23px;
     }
   }
+
+  &--dark {
+    color: $color-black;
+  }
 }
 
-.counter--dark {
-  color: $color-black;
-}
