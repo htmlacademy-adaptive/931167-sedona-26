@@ -43,40 +43,66 @@
 
 .hero__background {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $color-white;
-  background-image: url("../img/images/index-back-mobile.jpg");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/images/index-back-desktop.jpg");
-  }
+  background-color: $color-blue;
 }
 
 .hero__background--index {
   min-height: 389px;
+  background-image: url("../img/images/index-back-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/images/index-back-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 518px;
+    background-image: url("../img/images/index-back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/images/index-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/images/index-back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/images/index-back-desktop@2x.jpg");
+    }
   }
 }
 
 .hero__background--catalog,
 .hero__background--form {
-  background-image: url("../img/images/catalog-back-mobile.jpg");
+  background-image: url("../img/images/back-mobile.jpg");
   height: 159px;
 
-  @media (min-width: 321px) and (max-width: $tablet-width) {
-    min-height: 290px;
-    background-image: url("../img/images/catalog-back-tablet.jpg");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/images/back-mobile@2x.jpg");
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+    background-image: url("../img/images/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/images/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     min-height: 301px;
-    background-image: url("../img/images/catalog-back-desktop.jpg");
+    background-image: url("../img/images/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/images/back-desktop@2x.jpg");
+    }
   }
 }
 

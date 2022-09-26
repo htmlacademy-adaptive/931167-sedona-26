@@ -1,0 +1,52 @@
+.person {
+  @media (min-width: $tablet-width) {
+    margin-right: 41px;
+    min-width: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+    min-width: 430px;
+  }
+}
+
+.person__label {
+  margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+  }
+
+  &:not(:first-child) {
+    padding-top: 16px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+  }
+}
+
+.person__input {
+  border: none;
+  padding: 0;
+  padding-left: 16px;
+  background-color: $fordFieldsColor;
+  min-height: 58px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+
+  &:hover {
+    background-color: $control-hover;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    box-shadow: 4px 4px 0 $control-hover inset, -4px -4px 0 $control-hover inset;
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}

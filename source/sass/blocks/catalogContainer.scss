@@ -1,15 +1,16 @@
 .catalog-container {
   margin-top: 1px;
+
+  &__proof {
+    margin-top: 18px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 66px;
+    }
+  }
 }
 
-.catalog-container__proof {
-  margin-top: 18px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 56px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 66px;
-  }
-}

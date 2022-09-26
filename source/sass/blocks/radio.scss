@@ -1,0 +1,14 @@
+.radio {
+  @media (min-width: $tablet-width) {
+    grid-area: radio;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 65px;
+    min-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
+  }
+}

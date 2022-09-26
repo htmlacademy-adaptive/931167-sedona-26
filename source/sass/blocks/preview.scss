@@ -34,60 +34,60 @@
   @media (min-width: $desktop-width) {
     padding: 60px 358px 45px 358px;
   }
+}
 
-  .page__title {
-    @include font-bold(18px);
-    padding-bottom: 35px;
-    margin-left: 30px;
-    margin-right: 35px;
-    text-align: center;
+.page__title {
+  @include font-bold(18px);
+  padding-bottom: 35px;
+  margin-left: 30px;
+  margin-right: 35px;
+  text-align: center;
 
-    @media (min-width: $tablet-width) {
-      @include font-bold(21px);
-      margin-left: 120px;
-      margin-right: 120px;
-      padding-bottom: 29px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0;
-      margin-right: 5px;
-    }
+  @media (min-width: $tablet-width) {
+    @include font-bold(21px);
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-bottom: 29px;
   }
 
-  .page__title--form {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
+  @media (min-width: $desktop-width) {
     margin: 0;
-    padding-bottom: 23px;
+    margin-right: 5px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      font-size: 30px;
-      padding-bottom: 21px;
-    }
+.page__title--form {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 23px;
 
-    @media (min-width: $desktop-width) {
-      margin-left: -3px;
-      padding-bottom: 29px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 21px;
   }
 
-  .page__text {
-    @extend%font-regular;
-    color: $color-gray;
-    margin-right: 21px;
-    margin-left: 19px;
+  @media (min-width: $desktop-width) {
+    margin-left: -3px;
+    padding-bottom: 29px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      margin-left: 120px;
-      margin-right: 120px;
-    }
+.page__text {
+  @extend%font-regular;
+  color: $color-gray;
+  margin-right: 21px;
+  margin-left: 19px;
 
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 

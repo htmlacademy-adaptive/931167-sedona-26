@@ -1,0 +1,81 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 59px;
+  flex-grow: 1;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: contacts;
+    padding: 0;
+    width: 307px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 402px;
+  }
+}
+
+.contacts__label {
+  margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+  }
+
+  &:not(:first-child) {
+    padding-top: 16px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+  }
+}
+
+.contacts__container {
+  display: flex;
+}
+
+.contacts__input {
+  border: none;
+  width: 100%;
+  padding: 0;
+  padding-left: 16px;
+  background-color: $fordFieldsColor;
+  min-height: 58px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+
+  &:hover {
+    background-color: $control-hover;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    box-shadow: 4px 4px 0 $control-hover inset, -4px -4px 0 $control-hover inset;
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.contacts__icon {
+  background-color: $form-icon-backgorund;
+  display: block;
+  margin: 0;
+
+  &--phone {
+    padding: 20px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &--email {
+    padding: 23px 21px 23px 21px;
+    width: 16px;
+    height: 12px;
+  }
+}
