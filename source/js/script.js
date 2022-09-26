@@ -15,4 +15,3 @@ headerToggle.addEventListener('click', function () {
   navToggle.classList.toggle('navigation--closed');
   navLogo.classList.toggle('logo--no-js');
 });
-
