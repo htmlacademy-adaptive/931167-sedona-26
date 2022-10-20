@@ -73,7 +73,6 @@
 
 .advantages-card__description--last {
   padding-left: 13px;
-  max-width: 246px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -91,6 +90,7 @@
   padding-right: 18px;
   padding-top: 27px;
   padding-bottom: 25px;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -133,8 +133,6 @@
   padding-right: 6px;
 
   & .advantages-card__gap--road {
-    display: table;
-    padding-left: 33px;
   }
 
   & br {
@@ -185,7 +183,7 @@
       position: absolute;
       content: "";
       border-bottom: 1px solid $color-gray-light;
-      width: 284px;
+      width: 100%;
       bottom: 24px;
       left: -6px;
     }
@@ -203,7 +201,7 @@
       position: absolute;
       content: "";
       border-bottom: 1px solid $color-gray-light;
-      width: 284px;
+      width: 100%;
       bottom: 26px;
       left: -6px;
     }
